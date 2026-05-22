@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "eyebrow": "Care - Triage - Stabilise",
+    "title": "Ambulance Service",
+    "description": "Deliver patient care, triage scenes with precision, and anchor medical roleplay in every corner of the city.",
+    "backgroundImage": "assets/images/heroes/ambulance-hero-v1.png",
+    "actions": {
+      "primary": {
+        "label": "Start Saving Lives - Apply In Game",
+        "href": "cfx.re/join/89ymqm",
+        "newTab": true
+      },
+      "secondary": {
+        "label": "Discord <img src='https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
+        "href": "https://discord.gg/5Zt3Zy9a",
+        "newTab": true
+      }
+    }
+  },
+  "sections": {
+    "divisions": "Divisions",
+    "requirements": "Requirements",
+    "progression": "Progression"
+  },
+  "progressionPreview": [
+    "Operations Lead",
+    "Team Leader",
+    "Advanced Practitioner",
+    "Paramedic",
+    "Newly Qualified Paramedic",
+    "Student Paramedic",
+    "Emergency Medical Technician"
+  ],
+  "progressionFocusId": "studpara-1"
+}

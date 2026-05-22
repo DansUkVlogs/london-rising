@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>London Rising RP | British Roleplay Server</title>
+    <meta
+      name="description"
+      content="London Rising RP is a premium British-themed roleplay server with immersive civilian careers, active emergency services, and serious story-driven gameplay."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <link rel="icon" type="image/png" href="assets/images/branding/london-rising-logo.png" />
+  </head>
+  <body>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="#/home" aria-label="London Rising RP home">
+            <span class="brand__mark" data-brand-mark>
+              <img class="brand__logo" data-brand-logo alt=""/>
+              <span class="brand__fallback" data-brand-fallback>LR</span>
+            </span>
+
+            <span class="brand__text">
+              <span class="brand__eyeline" data-brand-line-one>London</span>
+              <span class="brand__title" data-brand-line-two>Rising RP</span>
+            </span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-controls="mobile-drawer"
+            aria-expanded="false"
+          >
+            <span class="menu-toggle__label">Menu</span>
+            <span class="menu-toggle__bars" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+
+          <nav class="site-nav" data-site-nav aria-label="Primary navigation"></nav>
+        </div>
+      </header>
+
+      <div class="mobile-nav-backdrop" data-mobile-backdrop hidden></div>
+
+      <aside
+        id="mobile-drawer"
+        class="mobile-drawer"
+        data-mobile-drawer
+        hidden
+        aria-hidden="true"
+      >
+        <div class="mobile-drawer__header">
+          <a class="brand brand--compact" href="#/home" aria-label="London Rising RP home">
+            <span class="brand__mark" data-brand-mark>
+              <img class="brand__logo" data-brand-logo alt="" />
+              <span class="brand__fallback" data-brand-fallback>LR</span>
+            </span>
+
+            <span class="brand__text">
+              <span class="brand__eyeline" data-brand-line-one>London</span>
+              <span class="brand__title" data-brand-line-two>Rising RP</span>
+            </span>
+          </a>
+
+          <button class="drawer-close" type="button" data-menu-close aria-label="Close menu">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation"></nav>
+
+        <div class="mobile-drawer__footer">
+          <p class="mobile-drawer__eyebrow" data-mobile-eyebrow>British themed. Story driven. Always evolving.</p>
+          <a class="button button--ghost button--full" data-mobile-drawer-action href="#/rules">Read server rules</a>
+        </div>
+      </aside>
+
+      <main
+        id="content"
+        class="page-host"
+        data-page-host
+        tabindex="-1"
+        aria-live="polite"
+        aria-busy="false"
+      ></main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <div class="site-footer__brand">
+            <a class="brand brand--footer" href="#/home" aria-label="London Rising RP home">
+              <span class="brand__mark" data-brand-mark>
+                <img class="brand__logo" data-brand-logo alt="" />
+                <span class="brand__fallback" data-brand-fallback>LR</span>
+              </span>
+
+              <span class="brand__text">
+                <span class="brand__eyeline" data-brand-line-one>London</span>
+                <span class="brand__title" data-brand-line-two>Rising RP</span>
+              </span>
+            </a>
+
+            <p class="site-footer__tagline" data-footer-tagline>
+              A cinematic British roleplay experience built for long-form character stories.
+            </p>
+          </div>
+        </div>
+
+        <div class="site-footer__bar">
+          <p>&copy; <span data-current-year></span> <span data-brand-full-name>London Rising RP</span>. <span data-footer-copyright-suffix>All rights reserved.</span></p>
+          <p data-footer-closing-line>Built to welcome new stories in every session.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

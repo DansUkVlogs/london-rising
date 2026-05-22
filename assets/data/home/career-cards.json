@@ -1,0 +1,62 @@
+[
+  {
+    "id": "police",
+    "variant": "police",
+    "eyebrow": "Serve",
+    "title": "Police",
+    "description": "Protect the streets, handle response work, and grow into specialist units.",
+    "accentColor": "rgba(0, 108, 230, 0.8)",
+    "href": "#/police",
+    "newTab": false
+  },
+  {
+    "id": "fire",
+    "variant": "fire",
+    "eyebrow": "Respond",
+    "title": "Fire",
+    "description": "Coordinate rescues, scene management, and major incident response.",
+    "accentColor": "rgba(204, 0, 0, 0.62)",
+    "href": "#/fire",
+    "newTab": false
+  },
+  {
+    "id": "ambulance",
+    "variant": "ambulance",
+    "eyebrow": "Stabilise",
+    "title": "Ambulance",
+    "description": "Deliver patient care, triage under pressure, and support the wider city.",
+    "accentColor": "rgba(0, 102, 0, 0.58)",
+    "href": "#/ambulance",
+    "newTab": false
+  },
+  {
+    "id": "mechanic",
+    "variant": "mechanic",
+    "eyebrow": "Fix",
+    "title": "Mechanic",
+    "description": "Keep the city moving with vehicle recovery, tuning, and workshop progression.",
+    "accentColor": "rgba(255, 255, 0, 0.58)",
+    "href": "#/mechanic",
+    "newTab": false
+  },
+  {
+    "id": "criminal",
+    "variant": "criminal",
+    "eyebrow": "Steal",
+    "title": "Criminal",
+    "description": "Engage in illicit activities, plan heists, and navigate the underworld.",
+    "accentColor": "rgba(153, 255, 153, 0.64)",
+    "href": "#/crim-jobs",
+    "newTab": false
+  },
+  {
+    "id": "civilian",
+    "variant": "civilian",
+    "eyebrow": "Work",
+    "title": "Civilian",
+    "description": "Participate in the city's economy, pursue personal goals, and contribute to the community.",
+    "accentColor": "rgba(46, 5, 198, 0.62)",
+    "href": "#/civ-jobs",
+    "newTab": false
+  }
+]

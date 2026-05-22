@@ -1,0 +1,40 @@
+:root {
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --color-background: #07131d;
+  --color-background-soft: #0b1d2a;
+  --color-surface: rgba(9, 24, 35, 0.84);
+  --color-surface-strong: rgba(7, 20, 30, 0.94);
+  --color-surface-muted: rgba(14, 31, 44, 0.82);
+  --color-border: rgba(200, 170, 108, 0.18);
+  --color-border-strong: rgba(216, 187, 121, 0.38);
+  --color-text: #f4ead4;
+  --color-text-soft: #d7c9af;
+  --color-text-muted: #97a9b7;
+  --color-accent: #c54b34;
+  --color-accent-strong: #a23625;
+  --color-gold: #d8bb79;
+  --color-gold-soft: #9a7f4b;
+  --color-success: #78cb88;
+  --color-shadow: rgba(0, 0, 0, 0.38);
+  --gradient-hero: linear-gradient(135deg, rgba(3, 10, 15, 0.88), rgba(7, 19, 29, 0.42));
+  --gradient-panel: linear-gradient(180deg, rgba(12, 27, 39, 0.95), rgba(7, 18, 28, 0.9));
+  --gradient-accent: linear-gradient(135deg, rgba(197, 75, 52, 0.92), rgba(126, 31, 21, 0.92));
+  --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 16px 38px rgba(0, 0, 0, 0.28);
+  --radius-sm: 0.7rem;
+  --radius-md: 0.95rem;
+  --radius-lg: 1.1rem;
+  --radius-xl: 1.3rem;
+  --site-width: min(1180px, calc(100% - 2rem));
+  --transition-fast: 180ms ease;
+  --transition-medium: 280ms ease;
+  --transition-slow: 420ms ease;
+  --header-height: 5.75rem;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --site-width: min(1240px, calc(100% - 3rem));
+  }
+}

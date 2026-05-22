@@ -1,0 +1,42 @@
+[
+  {
+    "rank": "Borough Lead",
+    "name": "",
+    "id": "bl-1",
+    "children": [
+      {
+        "rank": "Station Commander",
+        "name": "",
+        "id": "sc-1",
+        "children": [
+          {
+            "rank": "Watch Manager",
+            "name": "",
+            "id": "wm-1",
+            "children": [
+              {
+                "rank": "Crew Manager",
+                "name": "",
+                "id": "cm-1",
+                "children": [
+                  { "rank": "Firefighter", "name": "", "id": "ff-1", "children": [] },
+                  { "rank": "Firefighter", "name": "", "id": "ff-2", "children": [] },
+                  { "rank": "Probationary Firefighter", "name": "", "id": "pf-1", "children": [] }
+                ]
+              },
+              {
+                "rank": "Crew Manager",
+                "name": "",
+                "id": "cm-2",
+                "children": [
+                  { "rank": "Firefighter", "name": "", "id": "ff-3", "children": [] },
+                  { "rank": "Probationary Firefighter", "name": "", "id": "pf-2", "children": [] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

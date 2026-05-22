@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Response Policing",
+    "description": "Frontline patrol and immediate incident response throughout the city.",
+    "sgtLabel": "Sergeant",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Inspector",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Traffic & Roads",
+    "description": "Pursuits, motorway enforcement, and specialist roads policing duties.",
+    "sgtLabel": "Sergeant",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Inspector",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "CID",
+    "description": "Investigations, intelligence handling, and case-building roleplay.",
+    "sgtLabel": "Detective Sergeant",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Detective Inspector",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Specialist Operations",
+    "description": "High-risk incidents, firearms response, and planned tactical work.",
+    "sgtLabel": "Sergeant",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Inspector",
+    "inspector": "Vacant Position"
+  }
+]

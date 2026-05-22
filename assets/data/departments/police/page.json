@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "eyebrow": "Serve - Protect - Respect",
+    "title": "Police Service",
+    "description": "Protect the public, uphold the law, and become the difference London relies on when the city turns volatile.",
+    "backgroundImage": "assets/images/heroes/police-hero-v1.png",
+    "actions": {
+      "primary": {
+        "label": "Catch those Crooks - Apply In Game",
+        "href": "cfx.re/join/89ymqm",
+        "newTab": true
+      },
+      "secondary": {
+        "label": "Discord <img src='https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
+        "href": "https://discord.gg/5Zt3Zy9a",
+        "newTab": true
+      }
+    }
+  },
+  "sections": {
+    "divisions": "Divisions",
+    "requirements": "Requirements",
+    "progression": "Progression"
+  },
+  "progressionPreview": [
+    "Superintendent",
+    "Chief Inspector",
+    "Police Inspector",
+    "Police Sergeant",
+    "Police Constable",
+    "Recruit Officer"
+  ],
+  "progressionFocusId": "sup-1"
+}

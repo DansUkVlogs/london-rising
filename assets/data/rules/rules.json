@@ -1,0 +1,150 @@
+[
+  {
+    "id": "core-rules",
+    "navTitle": "1. Core Rules",
+    "title": "1. Core Rules",
+    "intro": "These rules apply to everyone, at all times.",
+    "items": [
+      {
+        "title": "1.1 Respect Everyone",
+        "body": "Treat all players and staff with respect. Harassment, discrimination, and hate speech are never acceptable."
+      },
+      {
+        "title": "1.2 No RDM / VDM",
+        "body": "Random deathmatch and vehicle deathmatch are forbidden. Violence must have clear in-character context and escalation."
+      },
+      {
+        "title": "1.3 No Fail RP",
+        "body": "Play your actions and surroundings seriously. Do not ignore injuries, scene pressure, or obvious consequences for convenience."
+      },
+      {
+        "title": "1.4 No Meta Gaming",
+        "body": "Keep out-of-character information out of your in-character decisions unless the server explicitly provides it in-character."
+      },
+      {
+        "title": "1.5 No Power Gaming",
+        "body": "Do not force outcomes on other players or use unrealistic actions to remove their agency in a scene."
+      }
+    ]
+  },
+  {
+    "id": "character-rules",
+    "navTitle": "2. In-Character Rules",
+    "title": "2. In-Character Rules",
+    "intro": "Rules that govern your character and how you roleplay them.",
+    "items": [
+      {
+        "title": "2.1 Act Your Age",
+        "body": "Your in-game character must act their age and maturity level. Do not use childish or troll behaviour on serious characters."
+      },
+      {
+        "title": "2.2 Value Your Life",
+        "body": "Your character should fear pain, arrest, injury, and death. Reckless heroics without reason undermine scene quality."
+      },
+      {
+        "title": "2.3 Keep Character Consistent",
+        "body": "Build believable motives, routines, and relationships. Sudden personality changes for advantage should be avoided."
+      }
+    ]
+  },
+  {
+    "id": "combat-rules",
+    "navTitle": "3. Combat & Weapons",
+    "title": "3. Combat & Weapon Rules",
+    "intro": "Standards for escalation, violence, and high-risk scenes.",
+    "items": [
+      {
+        "title": "3.1 Escalate Properly",
+        "body": "Give scenes room to develop. Threats, confrontation, and violence should follow believable in-character escalation."
+      },
+      {
+        "title": "3.2 Use Fear Realistically",
+        "body": "Weapons change the tone of a scene. Treat them seriously and roleplay the pressure they create."
+      },
+      {
+        "title": "3.3 No Convenience Respawns",
+        "body": "Do not use death or scene resets to escape consequences, police process, or medical follow-up."
+      }
+    ]
+  },
+  {
+    "id": "vehicle-rules",
+    "navTitle": "4. Vehicle Rules",
+    "title": "4. Vehicle Rules",
+    "intro": "Driving should feel grounded, not arcade-like.",
+    "items": [
+      {
+        "title": "4.1 Drive Believably",
+        "body": "Avoid impossible speeds, unrealistic stunts, and constant reckless driving unless the scene clearly calls for it."
+      },
+      {
+        "title": "4.2 Respect Collisions",
+        "body": "Major crashes should be roleplayed properly. Stop, assess injuries, and let emergency services become part of the story."
+      },
+      {
+        "title": "4.3 No Vehicle Abuse",
+        "body": "Do not weaponise vehicles, ram without strong RP reason, or use vehicles to bully scenes for easy wins."
+      }
+    ]
+  },
+  {
+    "id": "economy-rules",
+    "navTitle": "5. Economy Rules",
+    "title": "5. Economy Rules",
+    "intro": "A healthy server economy depends on restraint and fairness.",
+    "items": [
+      {
+        "title": "5.1 Earn Through RP",
+        "body": "Use jobs, services, and business interactions as part of your story rather than treating the economy like a grind-only system."
+      },
+      {
+        "title": "5.2 No Exploits",
+        "body": "Duping, bug abuse, AFK farming, and loophole exploitation will be treated as serious rule breaks."
+      },
+      {
+        "title": "5.3 Respect Ownership",
+        "body": "Businesses, vehicles, and property should be handled with in-character logic and proper permission."
+      }
+    ]
+  },
+  {
+    "id": "staff-support",
+    "navTitle": "6. Staff & Support",
+    "title": "6. Staff & Support",
+    "intro": "How to work with staff and support systems fairly.",
+    "items": [
+      {
+        "title": "6.1 Follow Staff Directions",
+        "body": "If staff intervene, pause the scene when asked and follow instructions calmly while the issue is resolved."
+      },
+      {
+        "title": "6.2 Use Tickets Properly",
+        "body": "Report issues through the correct support routes with evidence, patience, and clear timelines."
+      },
+      {
+        "title": "6.3 No Public Drama",
+        "body": "Do not turn disputes into public arguments. Let staff handle them through the proper channels."
+      }
+    ]
+  },
+  {
+    "id": "server-community",
+    "navTitle": "7. Server & Community",
+    "title": "7. Server & Community",
+    "intro": "Standards that help the wider community stay strong.",
+    "items": [
+      {
+        "title": "7.1 Protect the Atmosphere",
+        "body": "Keep comms, text chat, and scene behaviour in line with the serious server tone wherever possible."
+      },
+      {
+        "title": "7.2 Support New Players",
+        "body": "Help new arrivals settle into the city without stripping them of the chance to learn in character."
+      },
+      {
+        "title": "7.3 Build With Intention",
+        "body": "Whether you join a department or work a civilian job, contribute to the server in a way that gives others scenes too."
+      }
+    ]
+  }
+]

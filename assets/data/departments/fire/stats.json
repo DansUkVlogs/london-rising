@@ -1,0 +1,14 @@
+[
+  {
+    "value": "18",
+    "label": "Firefighters online"
+  },
+  {
+    "value": "4",
+    "label": "Stations active"
+  },
+  {
+    "value": "03:04",
+    "label": "Average turnout time"
+  }
+]

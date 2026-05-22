@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Urban Response",
+    "description": "Standard fire calls, scene safety, and first-response rescue work.",
+    "sgtLabel": "Crew Manager",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Watch Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Road Traffic Collisions",
+    "description": "Vehicle extrication, hazard control, and technical scene support.",
+    "sgtLabel": "Crew Manager",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Watch Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Hazmat & Specialist",
+    "description": "Complex incidents requiring disciplined coordination and procedure.",
+    "sgtLabel": "Crew Manager",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Watch Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Command Support",
+    "description": "Incident command, logistics, and cross-service scene management.",
+    "sgtLabel": "Crew Manager",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Watch Manager",
+    "inspector": "Vacant Position"
+  }
+]

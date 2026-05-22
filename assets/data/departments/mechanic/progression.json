@@ -1,0 +1,35 @@
+[
+  {
+    "rank": "Garage Director",
+    "name": "",
+    "id": "gd-1",
+    "children": [
+      {
+        "rank": "Shift Manager",
+        "name": "",
+        "id": "shm-1",
+        "children": [
+          {
+            "rank": "Recovery Specialist",
+            "name": "",
+            "id": "rs-1",
+            "children": [
+              { "rank": "Senior Technician", "name": "", "id": "st-1", "children": [] },
+              { "rank": "Senior Technician", "name": "", "id": "st-2", "children": [] }
+            ]
+          },
+          {
+            "rank": "Senior Technician",
+            "name": "",
+            "id": "st-3",
+            "children": [
+              { "rank": "Mechanic", "name": "", "id": "mec-1", "children": [] },
+              { "rank": "Mechanic", "name": "", "id": "mec-2", "children": [] },
+              { "rank": "Workshop Assistant", "name": "", "id": "wa-1", "children": [] }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

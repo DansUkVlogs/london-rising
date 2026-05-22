@@ -1,0 +1,58 @@
+[
+  {
+    "rank": "Superintendent",
+    "name": "",
+    "id": "sup-1",
+    "children": [
+      {
+        "rank": "Chief Inspector",
+        "name": "",
+        "id": "ci-1",
+        "children": [
+          {
+            "rank": "Police Inspector",
+            "name": "",
+            "id": "insp-1",
+            "children": [
+              {
+                "rank": "Police Sergeant",
+                "name": "",
+                "id": "sgt-1",
+                "children": [
+                  { "rank": "Police Constable", "name": "", "id": "pc-1", "children": [] },
+                  { "rank": "Police Constable", "name": "", "id": "pc-2", "children": [] },
+                  { "rank": "Recruit Officer", "name": "", "id": "ro-1", "children": [] }
+                ]
+              },
+              {
+                "rank": "Police Sergeant",
+                "name": "",
+                "id": "sgt-2",
+                "children": [
+                  { "rank": "Police Constable", "name": "", "id": "pc-3", "children": [] },
+                  { "rank": "Recruit Officer", "name": "", "id": "ro-2", "children": [] }
+                ]
+              }
+            ]
+          },
+          {
+            "rank": "Police Inspector",
+            "name": "",
+            "id": "insp-2",
+            "children": [
+              {
+                "rank": "Police Sergeant",
+                "name": "",
+                "id": "sgt-3",
+                "children": [
+                  { "rank": "Police Constable", "name": "", "id": "pc-4", "children": [] },
+                  { "rank": "Recruit Officer", "name": "", "id": "ro-3", "children": [] }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

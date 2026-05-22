@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "documentTitle": "London Rising RP | British Roleplay Server",
+    "documentDescription": "London Rising RP is a premium British-themed roleplay server with immersive civilian careers, active emergency services, and serious story-driven gameplay."
+  },
+  "brand": {
+    "lineOne": "London",
+    "lineTwo": "Rising RP",
+    "fullName": "London Rising RP",
+    "fallbackMark": "LR",
+    "logoPath": "assets/images/branding/london-rising-logo.png"
+  },
+  "mobileDrawer": {
+    "eyebrow": "British themed. Story driven. Always evolving.",
+    "action": {
+      "label": "Read server rules",
+      "href": "#/rules",
+      "newTab": false
+    }
+  },
+  "footer": {
+    "navigationHeading": "Navigate",
+    "tagline": "A cinematic British roleplay experience built for long-form character stories.",
+    "metaHeading": "Server cadence",
+    "metaItems": [
+      "Restart cycle every 4-5 hours",
+      "Serious roleplay standards",
+      "Emergency and civilian career paths"
+    ],
+    "closingLine": "Built to welcome new stories in every session.",
+    "copyrightSuffix": "All rights reserved."
+  }
+}

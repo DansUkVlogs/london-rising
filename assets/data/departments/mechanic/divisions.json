@@ -1,0 +1,34 @@
+[
+  {
+    "name": "General Repairs",
+    "description": "Routine maintenance, parts replacement, and customer-facing service.",
+    "sgtLabel": "Senior Technician",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Shift Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Recovery & Towing",
+    "description": "Vehicle recovery, roadside assistance, and collision support scenes.",
+    "sgtLabel": "Recovery Specialist",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Shift Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Performance Tuning",
+    "description": "Specialist builds, custom requests, and premium workshop progression.",
+    "sgtLabel": "Senior Technician",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Shift Manager",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Business Operations",
+    "description": "Shift management, sourcing, invoicing, and garage growth roleplay.",
+    "sgtLabel": "Senior Technician",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Shift Manager",
+    "inspector": "Vacant Position"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "value": "23",
+    "label": "Medics online"
+  },
+  {
+    "value": "7",
+    "label": "Units available"
+  },
+  {
+    "value": "01:54",
+    "label": "Average dispatch time"
+  }
+]

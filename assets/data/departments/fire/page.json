@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "eyebrow": "Respond - Rescue - Recover",
+    "title": "Fire Brigade",
+    "description": "Run incident scenes, coordinate rescues, and handle the major emergencies that test the whole city.",
+    "backgroundImage": "assets/images/heroes/fire-hero-v1.png",
+    "actions": {
+      "primary": {
+        "label": "Get some cats out of trees - Apply In Game",
+        "href": "cfx.re/join/89ymqm",
+        "newTab": true
+      },
+      "secondary": {
+        "label": "Discord <img src='https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
+        "href": "https://discord.gg/5Zt3Zy9a",
+        "newTab": true
+      }
+    }
+  },
+  "sections": {
+    "divisions": "Divisions",
+    "requirements": "Requirements",
+    "progression": "Progression"
+  },
+  "progressionPreview": [
+    "Borough Lead",
+    "Station Commander",
+    "Watch Manager",
+    "Crew Manager",
+    "Firefighter",
+    "Probationary Firefighter"
+  ],
+  "progressionFocusId": "bl-1"
+}

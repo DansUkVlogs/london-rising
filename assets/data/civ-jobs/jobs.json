@@ -1,0 +1,86 @@
+[
+  {
+    "id": "taxi",
+    "variant": "taxi",
+    "number": "01",
+    "backgroundImage": "assets/images/opportunities/civ-taxi.png",
+    "accentColor": "rgba(128, 98, 24, 0.86)",
+    "title": "Taxi Driver",
+    "description": "Pick up passengers, learn the city, and earn through steady, social roleplay.",
+    "longDescription": "Taxi driving is one of the best ways to build a grounded civilian story in London. You can work airport runs, late-night pickups, and local fares while meeting every kind of character the city throws at you.\n\nIt suits players who enjoy conversation-heavy roleplay, regular cash flow, and the feeling of learning the city district by district. The longer you stay consistent, the easier it becomes to turn a simple cab shift into connections, favours, and long-term reputation.",
+    "tags": [
+      "Earn respect",
+      "Flexible hours"
+    ]
+  },
+  {
+    "id": "bus",
+    "variant": "bus",
+    "number": "02",
+    "backgroundImage": "assets/images/opportunities/civ-bus.png",
+    "accentColor": "rgba(124, 36, 25, 0.9)",
+    "title": "Bus Driver",
+    "description": "Serve the route, support the public, and make the city feel alive on every shift.",
+    "longDescription": "Bus driving gives your character a visible place in the rhythm of the city. Running routes, stopping for passengers, and dealing with whatever happens onboard can create some of the most naturally social scenes on the server.\n\nIt is a strong choice for players who want reliable work with room for personality, conflict, and routine. A calm shift can become public service roleplay, transport support, or a front-row seat to the chaos happening across London.",
+    "tags": [
+      "Steady income",
+      "Shift work"
+    ]
+  },
+  {
+    "id": "delivery",
+    "variant": "delivery",
+    "number": "03",
+    "backgroundImage": "assets/images/opportunities/civ-delivery.png",
+    "accentColor": "rgba(25, 55, 110, 0.84)",
+    "title": "Delivery Driver",
+    "description": "Move parcels and specialist consignments across London on a schedule that rewards speed.",
+    "longDescription": "Delivery work is ideal for characters who like movement, timing, and juggling multiple priorities at once. Small courier jobs can grow into higher-value contracts, urgent city drops, and specialist consignments that carry real pressure.\n\nBecause the role naturally takes you across every borough, it also becomes a strong bridge into business roleplay, logistics, and chance encounters. A simple route can quickly turn into a chase against time or a favour that opens bigger opportunities.",
+    "tags": [
+      "High demand",
+      "Fast paced"
+    ]
+  },
+  {
+    "id": "sanitation",
+    "variant": "sanitation",
+    "number": "04",
+    "backgroundImage": "assets/images/opportunities/civ-sanitation.png",
+    "accentColor": "rgba(26, 92, 58, 0.84)",
+    "title": "Sanitation Worker",
+    "description": "Keep the city clean and stable with reliable public service progression and team routes.",
+    "longDescription": "Sanitation work gives civilian roleplay a practical backbone and a proper sense of public service. It is perfect for players who want teamwork, scheduled routes, and a role that quietly supports the whole server economy.\n\nThe job can be played as honest long-term employment, a stepping stone into council contracts, or the kind of steady work that shapes a believable everyday character. It is dependable, visible, and full of chances to interact with the wider community.",
+    "tags": [
+      "City essential",
+      "Stable role"
+    ]
+  },
+  {
+    "id": "logistics",
+    "variant": "logistics",
+    "number": "05",
+    "backgroundImage": "assets/images/opportunities/civ-logistics.png",
+    "accentColor": "rgba(112, 70, 18, 0.88)",
+    "title": "Logistics Operator",
+    "description": "Move goods, coordinate routes, and scale up into larger contracts with the right reputation.",
+    "longDescription": "Logistics is where ordinary deliveries start turning into serious commercial roleplay. Characters in this lane can move stock, organise routes, coordinate larger shipments, and become trusted operators for businesses that need things done properly.\n\nIt works especially well for players who enjoy progression and responsibility. As your reputation grows, the role can evolve from basic runs into contract management, team-led operations, and the sort of business presence that changes how people see your character.",
+    "tags": [
+      "Big contracts",
+      "Team focused"
+    ]
+  },
+  {
+    "id": "legal",
+    "variant": "legal",
+    "number": "06",
+    "backgroundImage": "assets/images/opportunities/civ-legal.png",
+    "accentColor": "rgba(73, 52, 118, 0.82)",
+    "title": "Legal Professional",
+    "description": "Represent clients, advise organisations, and bring courtroom roleplay into the city economy.",
+    "longDescription": "Legal roleplay gives civilian characters influence without needing a badge or a siren. You can represent clients, advise businesses, challenge cases, and turn disputes into proper courtroom stories that affect more than one scene.\n\nThis path suits players who like long-form character building, structured roleplay, and using words, strategy, and reputation as their main tools. A good legal professional can become one of the most connected people in the city.",
+    "tags": [
+      "High reputation",
+      "Career path"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Frontline Ambulance",
+    "description": "Primary emergency response, patient transport, and frontline ambulance operations.",
+    "sgtLabel": "Team Leader",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Clinical Team Educator",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Clinical Support",
+    "description": "Advanced clinical support, specialist paramedic response, and complex patient oversight.",
+    "sgtLabel": "Specialist Paramedic",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Advanced Paramedic Practitioner",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "HART",
+    "description": "Hazardous Area Response Team providing specialist response to CBRN, confined space, and high-risk incidents.",
+    "sgtLabel": "HART Paramedic",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "HART Training Lead",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "HEMS",
+    "description": "Air ambulance and critical care response for severe trauma and time-critical incidents.",
+    "sgtLabel": "Critical Care Paramedic",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "HEMS Doctor",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Clinical Education",
+    "description": "Clinical education, mentoring, university placements, and workforce development.",
+    "sgtLabel": "Clinical Training Mentor",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Curriculum Developer",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Driver Training",
+    "description": "Blue light driving instruction, response driving assessments, and fleet training support.",
+    "sgtLabel": "Driving Tutor",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Associate Tutor",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Patient Safety & Governance",
+    "description": "Clinical governance, patient safety investigations, audit, and learning from incidents.",
+    "sgtLabel": "Quality Assurance Manager",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Clinical Governance Lead",
+    "inspector": "Vacant Position"
+  },
+  {
+    "name": "Operational Resilience",
+    "description": "Major incident planning, emergency preparedness, tactical support, and resilience coordination.",
+    "sgtLabel": "Emergency Preparedness Officer",
+    "sgt": "Vacant Position",
+    "inspectorLabel": "Tactical Advisor",
+    "inspector": "Vacant Position"
+  }
+]

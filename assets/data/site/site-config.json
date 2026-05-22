@@ -1,0 +1,83 @@
+{
+  "defaultSiteId": "home",
+  "sites": [
+    {
+      "id": "home",
+      "label": "Home",
+      "hash": "#/home",
+      "partial": "pages/home.html",
+      "pageType": "home",
+      "dataFolder": "assets/data/home"
+    },
+    {
+      "id": "civ-jobs",
+      "label": "Civilian Jobs",
+      "hash": "#/civ-jobs",
+      "partial": "pages/civ-jobs.html",
+      "pageType": "civ-jobs",
+      "dataFolder": "assets/data/civ-jobs"
+    },
+    {
+      "id": "crim-jobs",
+      "label": "Criminal Activities",
+      "hash": "#/crim-jobs",
+      "partial": "pages/crim-jobs.html",
+      "pageType": "crim-jobs",
+      "dataFolder": "assets/data/crim-jobs"
+    },
+    {
+      "id": "police",
+      "label": "Police",
+      "hash": "#/police",
+      "partial": "pages/police.html",
+      "pageType": "department",
+      "dataFolder": "assets/data/departments/police"
+    },
+    {
+      "id": "fire",
+      "label": "Fire",
+      "hash": "#/fire",
+      "partial": "pages/fire.html",
+      "pageType": "department",
+      "dataFolder": "assets/data/departments/fire"
+    },
+    {
+      "id": "ambulance",
+      "label": "Ambulance",
+      "hash": "#/ambulance",
+      "partial": "pages/ambulance.html",
+      "pageType": "department",
+      "dataFolder": "assets/data/departments/ambulance"
+    },
+    {
+      "id": "mechanic",
+      "label": "Mechanic",
+      "hash": "#/mechanic",
+      "partial": "pages/mechanic.html",
+      "pageType": "department",
+      "dataFolder": "assets/data/departments/mechanic"
+    },
+    {
+      "id": "rules",
+      "label": "Rules",
+      "hash": "#/rules",
+      "partial": "pages/rules.html",
+      "pageType": "rules",
+      "dataFolder": "assets/data/rules"
+    },
+    {
+      "id": "discord",
+      "label": "Discord",
+      "href": "https://discord.gg/TYzFHV8f",
+      "newTab": true,
+      "buttonStyle": true
+    },
+    {
+      "id": "join",
+      "label": "Join the City",
+      "href": "https://cfx.re/join/89ymqm",
+      "newTab": true,
+      "buttonStyle": true
+    }
+  ]
+}

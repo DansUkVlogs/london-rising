@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "eyebrow": "Recover - Repair - Build",
+    "title": "City Workshop Network",
+    "description": "Keep London moving through recovery, repairs, tuning, and the business roleplay that sits behind every vehicle on the road.",
+    "backgroundImage": "assets/images/heroes/mechanic-hero-v1.png",
+    "actions": {
+      "primary": {
+        "label": "Join the workshop - Apply In Game",
+        "href": "cfx.re/join/89ymqm",
+        "newTab": true
+      },
+      "secondary": {
+        "label": "Discord <img src='https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
+        "href": "https://discord.gg/5Zt3Zy9a",
+        "newTab": true
+      }
+    }
+  },
+  "sections": {
+    "divisions": "Divisions",
+    "requirements": "Requirements",
+    "progression": "Progression"
+  },
+  "progressionPreview": [
+    "Garage Director",
+    "Shift Manager",
+    "Recovery Specialist",
+    "Senior Technician",
+    "Mechanic",
+    "Workshop Assistant"
+  ],
+  "progressionFocusId": "gd-1"
+}

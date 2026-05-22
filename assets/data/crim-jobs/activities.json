@@ -1,0 +1,86 @@
+[
+  {
+    "id": "corner-dealing",
+    "variant": "corner-dealing",
+    "number": "01",
+    "backgroundImage": "assets/images/opportunities/crime-street-dealing.png",
+    "accentColor": "rgba(54, 19, 27, 0.86)",
+    "title": "Street Dealing",
+    "description": "Move product through the city, manage heat, and build a name in the local underground economy.",
+    "longDescription": "Street dealing is the entry point for characters who want to work the shadows and build a criminal name from the ground up. It is quick, risky, and heavily dependent on where you operate, who you know, and how well you manage police attention.\n\nDone properly, it becomes more than a fast-money loop. It creates territory disputes, repeat customers, rival crews, and the kind of reputation that can pull a character into deeper and more organised crime.",
+    "tags": [
+      "Quick cash",
+      "High risk"
+    ]
+  },
+  {
+    "id": "boosting",
+    "variant": "boosting",
+    "number": "02",
+    "backgroundImage": "assets/images/opportunities/crime-boosting.png",
+    "accentColor": "rgba(30, 44, 78, 0.84)",
+    "title": "Vehicle Boosting",
+    "description": "Steal requested vehicles, beat the clock, and deliver clean jobs for bigger rewards and more dangerous contracts.",
+    "longDescription": "Vehicle boosting is perfect for criminal characters who want fast decision-making, pressure, and escalation. Jobs can begin with ordinary targets and build into specialist requests that demand speed, clean execution, and a reliable handoff.\n\nIt works best when played with discipline and crew structure. The more successful your operations become, the more attention you attract from police, rivals, and the people paying for the vehicles in the first place.",
+    "tags": [
+      "Crew work",
+      "Escalating jobs"
+    ]
+  },
+  {
+    "id": "burglaries",
+    "variant": "burglaries",
+    "number": "03",
+    "backgroundImage": "assets/images/opportunities/crime-burglaries.png",
+    "accentColor": "rgba(74, 48, 19, 0.88)",
+    "title": "House Burglaries",
+    "description": "Break into properties, search for valuables, and get out before residents, neighbours, or police close in.",
+    "longDescription": "House burglaries reward patience, stealth, and the ability to stay calm when a quiet job starts turning loud. The tension comes from being inside somebody else's space, searching quickly, and knowing every second spent inside raises the odds of disaster.\n\nThis role shines when you want suspense-heavy criminal scenes rather than open chaos. A single burglary can create evidence, witnesses, retaliation, and story hooks that reach well beyond the value of the stolen goods.",
+    "tags": [
+      "Stealth heavy",
+      "Night work"
+    ]
+  },
+  {
+    "id": "atm-raids",
+    "variant": "atm-raids",
+    "number": "04",
+    "backgroundImage": "assets/images/opportunities/crime-atm.png",
+    "accentColor": "rgba(75, 21, 21, 0.9)",
+    "title": "ATM Raids",
+    "description": "Plan smash-and-grab runs, secure transport, and disappear fast before the city response catches up.",
+    "longDescription": "ATM raids are built around speed, coordination, and nerve. They are loud enough to attract attention quickly, which means every part of the plan matters: arrival, extraction, transport, and how cleanly you break contact once the city starts reacting.\n\nThese jobs are ideal for characters who like short windows, sharp execution, and the feeling that one mistake can collapse the whole run. Fast payout comes with equally fast consequences if you get sloppy.",
+    "tags": [
+      "Fast payout",
+      "Heat magnet"
+    ]
+  },
+  {
+    "id": "store-robberies",
+    "variant": "store-robberies",
+    "number": "05",
+    "backgroundImage": "assets/images/opportunities/crime-store.png",
+    "accentColor": "rgba(25, 63, 58, 0.82)",
+    "title": "Store Robberies",
+    "description": "Hit convenience stores and late-night businesses, manage hostages or pressure, and survive the response window.",
+    "longDescription": "Store robberies bring criminal roleplay into direct contact with the public and emergency services. They are some of the best opportunities for live negotiation, improvisation, and tension between keeping control and knowing backup is already on the way.\n\nWhether you play them as desperate short-term scores or part of a larger criminal pattern, they naturally create scenes with stakes. Clerks, bystanders, police, and crew members all become part of the story the moment the pressure starts building.",
+    "tags": [
+      "Roleplay heavy",
+      "Live response"
+    ]
+  },
+  {
+    "id": "major-heists",
+    "variant": "major-heists",
+    "number": "06",
+    "backgroundImage": "assets/images/opportunities/crime-heists.png",
+    "accentColor": "rgba(82, 36, 18, 0.88)",
+    "title": "Major Heists",
+    "description": "Build toward serious organised crime with layered plans, specialist roles, and city-wide consequences when things go wrong.",
+    "longDescription": "Major heists are endgame criminal stories that demand planning, trust, and the right people in the right roles. They should feel like operations, not quick cash, with the possibility of surveillance, specialist equipment, overlapping crews, and serious law enforcement response.\n\nWhen they succeed, they define reputations. When they fail, they leave evidence trails, arrests, rival tension, and long-term consequences that can shape the criminal underworld for weeks.",
+    "tags": [
+      "Endgame content",
+      "Big consequences"
+    ]
+  }
+]

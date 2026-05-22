@@ -1,0 +1,14 @@
+[
+  {
+    "value": "42",
+    "label": "Officers online"
+  },
+  {
+    "value": "6",
+    "label": "Active units operational"
+  },
+  {
+    "value": "02:18",
+    "label": "Average response time"
+  }
+]

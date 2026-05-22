@@ -1,0 +1,22 @@
+{
+  "kicker": "A premium British roleplay experience",
+  "title": {
+    "lineOne": "London",
+    "accent": "Rising",
+    "lineTwo": "RP"
+  },
+  "description": "Serious character-driven roleplay with a polished city atmosphere, disciplined emergency services, and civilian opportunities that reward long-term stories.",
+  "backgroundImage": "assets/images/heroes/home-hero-v1.png",
+  "actions": {
+    "primary": {
+      "label": "Join the city",
+      "href": "https://cfx.re/join/89ymqm",
+      "newTab": true
+    },
+    "secondary": {
+      "label": "Read the rules",
+      "href": "#/rules",
+      "newTab": false
+    }
+  }
+}
