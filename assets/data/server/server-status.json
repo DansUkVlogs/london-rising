@@ -3,7 +3,12 @@
   "summary": "All systems operational",
   "playerCount": 128,
   "playerCap": 250,
-  "peakToday": 187,
+  "liveSource": {
+    "provider": "fivem",
+    "joinCode": "89ymqm",
+    "pollIntervalMs": 30000,
+    "requestTimeoutMs": 8000
+  },
   "timezoneLabel": "BST",
   "restartTimes": [
     "00:00",

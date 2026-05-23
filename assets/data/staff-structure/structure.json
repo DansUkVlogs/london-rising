@@ -1,0 +1,367 @@
+{
+  "sectionLabel": "Staff hierarchy",
+  "sectionTitle": "Chain of command",
+  "sectionDescription": "This chart shows the server hierarchy structure.",
+  "fallbackProfileImage": "assets/images/placeholders/blank-profile.png",
+  "nodes": [
+    {
+      "id": "ownership-division",
+      "name": "Ownership Team",
+      "role": "Ownership Division",
+      "summary": "Top-level leadership responsible for the overall direction of the server.",
+      "fullDescription": "The Ownership Team oversees all major server decisions, standards, leadership, and long-term planning.",
+      "sectionCard": true,
+      "accentColor": "rgba(183, 82, 64, 0.44)",
+      "children": [
+        "owner-1",
+        "owner-2",
+        "owner-3"
+      ]
+    },
+    {
+      "id": "owner-1",
+      "name": "GypsyBoy Crumbs",
+      "role": "Owner",
+      "summary": "Server owner responsible for leadership and oversight.",
+      "fullDescription": "GypsyBoy Crumbs helps lead the server, manage standards, and oversee major server operations.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(183, 82, 64, 0.44)",
+      "children": [
+        "development-division",
+        "server-management",
+        "testing-division"
+      ]
+    },
+    {
+      "id": "owner-2",
+      "name": "GypsyGirl",
+      "role": "Owner",
+      "summary": "Part of the ownership team helping guide the community.",
+      "fullDescription": "GypsyGirl supports leadership decisions, community standards, and overall server management.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(183, 82, 64, 0.44)",
+      "children": [
+        "development-division",
+        "server-management",
+        "testing-division"
+      ]
+    },
+    {
+      "id": "owner-3",
+      "name": "Hatesmallpeople",
+      "role": "Owner",
+      "summary": "Supports high-level server leadership and decisions.",
+      "fullDescription": "Hatesmallpeople helps oversee server standards, leadership structure, and long-term direction.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(183, 82, 64, 0.44)",
+      "children": [
+        "development-division",
+        "server-management",
+        "testing-division"
+      ]
+    },
+    {
+      "id": "development-division",
+      "name": "Development Team",
+      "role": "Development Division",
+      "summary": "Responsible for server systems and technical development. Reports to GypsyBoy Crumbs principally, but also collaborates with the other owners and divisions.",
+      "fullDescription": "The Development Team manages scripts, systems, updates, fixes, and technical improvements for the server. They work closely with the ownership team to ensure technical quality and support server growth. They also coordinate with the Testing Division to ensure updates are properly reviewed before release., They are incharge of all technical aspects of the server, including in-game systems and the server's webpage.",
+      "sectionCard": true,
+      "accentColor": "rgba(131, 98, 188, 0.4)",
+      "sharedParents": [
+        "owner-1",
+        "owner-2",
+        "owner-3"
+      ],
+      "children": [
+        "lead-developer"
+      ]
+    },
+    {
+      "id": "lead-developer",
+      "name": "𓄿𝕃𝕖𝕠 𝕄𝕠𝕣𝕥𝕫",
+      "role": "Lead Developer",
+      "summary": "Leads technical development and server systems.",
+      "fullDescription": "𓄿𝕃𝕖𝕠 𝕄𝕠𝕣𝕥𝕫 oversees server development, manages technical projects, and maintains overall system quality.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(131, 98, 188, 0.4)",
+      "children": [
+        "developer-1",
+        "developer-2",
+        "developer-3"
+      ]
+    },
+    {
+      "id": "developer-1",
+      "name": "Leo Mortz",
+      "role": "Developer",
+      "summary": "Supports server systems and technical updates.",
+      "fullDescription": "Leo Mortz works on server systems, scripting, and technical improvements.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(116, 102, 198, 0.36)",
+      "children": []
+    },
+    {
+      "id": "developer-2",
+      "name": "Exvei",
+      "role": "Developer",
+      "summary": "Supports server development and maintenance.",
+      "fullDescription": "Exvei helps maintain systems, implement fixes, and support technical server development.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(116, 102, 198, 0.36)",
+      "children": []
+    },
+    {
+      "id": "developer-3",
+      "name": "DansUkVlogs",
+      "role": "Web Developer",
+      "summary": "Supports web development and server quality assurance.",
+      "fullDescription": "DansUkVlogs helps review updates, support server quality assurance, and contribute to web development tasks including managing and developing the server's webpage.",
+      "sectionCard": false,
+      "image": "https://yt3.ggpht.com/_NT8qsB2hFS6Drvpp9BLGYmFjHaGQvZusd3DLhTRkicj7Dsgu1sQfNzoZ1uonjMy61NWk9uUnA=s600-c-k-c0x00ffffff-no-rj-rp-mo",
+      "accentColor": "rgba(72, 170, 132, 0.36)",
+      "children": []
+    },
+    {
+      "id": "server-management",
+      "name": "Server Management",
+      "role": "Management Division",
+      "summary": "Responsible for operational management and staff coordination.",
+      "fullDescription": "The Server Management division oversees the day-to-day running of the server and staff structure.",
+      "sectionCard": true,
+      "accentColor": "rgba(217, 171, 87, 0.4)",
+      "sharedParents": [
+        "owner-1",
+        "owner-2",
+        "owner-3"
+      ],
+      "children": [
+        "server-manager"
+      ]
+    },
+    {
+      "id": "server-manager",
+      "name": "Andy Fal123",
+      "role": "Server Manager",
+      "summary": "Oversees server operations and staff management.",
+      "fullDescription": "Andy Fal123 manages server operations, staffing structure, and daily server administration.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(217, 171, 87, 0.4)",
+      "children": [
+        "city-staff-division",
+        "discord-staff-division"
+      ]
+    },
+    {
+      "id": "city-staff-division",
+      "name": "City Staff",
+      "role": "City Staff Division",
+      "summary": "Handles in-city moderation and support.",
+      "fullDescription": "The City Staff division focuses on in-game moderation, player support, and maintaining roleplay standards.",
+      "sectionCard": true,
+      "accentColor": "rgba(67, 154, 135, 0.38)",
+      "children": [
+        "city-staff-1",
+        "city-staff-2",
+        "city-staff-3"
+      ]
+    },
+    {
+      "id": "city-staff-1",
+      "name": "VACANT POSITION",
+      "role": "City Staff",
+      "summary": "Vacant city moderation role.",
+      "fullDescription": "This City Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(67, 154, 135, 0.38)",
+      "children": []
+    },
+    {
+      "id": "city-staff-2",
+      "name": "VACANT POSITION",
+      "role": "City Staff",
+      "summary": "Vacant city moderation role.",
+      "fullDescription": "This City Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(67, 154, 135, 0.38)",
+      "children": []
+    },
+    {
+      "id": "city-staff-3",
+      "name": "VACANT POSITION",
+      "role": "City Staff",
+      "summary": "Vacant city moderation role.",
+      "fullDescription": "This City Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(67, 154, 135, 0.38)",
+      "children": []
+    },
+    {
+      "id": "discord-staff-division",
+      "name": "Discord Staff",
+      "role": "Discord Staff Division",
+      "summary": "Handles Discord moderation and support.",
+      "fullDescription": "The Discord Staff division manages Discord moderation, support, and community communications.",
+      "sectionCard": true,
+      "accentColor": "rgba(95, 122, 198, 0.38)",
+      "children": [
+        "discord-staff-1",
+        "discord-staff-2",
+        "discord-staff-3"
+      ]
+    },
+    {
+      "id": "discord-staff-1",
+      "name": "VACANT POSITION",
+      "role": "Discord Staff",
+      "summary": "Vacant Discord moderation role.",
+      "fullDescription": "This Discord Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(95, 122, 198, 0.38)",
+      "children": []
+    },
+    {
+      "id": "discord-staff-2",
+      "name": "VACANT POSITION",
+      "role": "Discord Staff",
+      "summary": "Vacant Discord moderation role.",
+      "fullDescription": "This Discord Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(95, 122, 198, 0.38)",
+      "children": []
+    },
+    {
+      "id": "discord-staff-3",
+      "name": "VACANT POSITION",
+      "role": "Discord Staff",
+      "summary": "Vacant Discord moderation role.",
+      "fullDescription": "This Discord Staff position is currently vacant and available for future appointments.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(95, 122, 198, 0.38)",
+      "children": []
+    },
+    {
+      "id": "testing-division",
+      "name": "Testing Division",
+      "role": "Testing Department",
+      "summary": "Responsible for testing updates and quality assurance.",
+      "fullDescription": "The Testing Division oversees bug testing, quality assurance, and update reviews before release.",
+      "sectionCard": true,
+      "accentColor": "rgba(78, 138, 194, 0.4)",
+      "sharedParents": [
+        "owner-1",
+        "owner-2",
+        "owner-3"
+      ],
+      "children": [
+          "head-tester-1",
+          "head-tester-2"
+      ]
+    },
+    {
+      "id": "head-tester-1",
+      "name": "Redhood200525",
+      "role": "Head Tester",
+      "summary": "Coordinates testing and quality checks.",
+      "fullDescription": "Redhood200525 helps lead testing operations and supports quality assurance processes.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(78, 138, 194, 0.4)",
+      "children": [
+        "tester-1",
+        "tester-2",
+        "tester-3",
+        "tester-4"
+      ]
+    },
+    {
+      "id": "head-tester-2",
+      "name": "Cam729",
+      "role": "Head Tester",
+      "summary": "Supports testing operations and update reviews.",
+      "fullDescription": "Cam729 helps coordinate testing standards and supports quality assurance reviews.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(78, 138, 194, 0.4)",
+      "children": [
+        "tester-1",
+        "tester-2",
+        "tester-3",
+        "tester-4"
+      ]
+    },
+    {
+      "id": "tester-1",
+      "name": "𝕺𝖑𝖎𝖊",
+      "role": "Tester",
+      "summary": "Tests server features and reports issues.",
+      "fullDescription": "𝕺𝖑𝖎𝖊 helps review updates, identify bugs, and improve server quality.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(72, 170, 132, 0.36)",
+      "sharedParents": [
+        "head-tester-1",
+        "head-tester-2"
+      ],
+      "children": []
+    },
+    {
+      "id": "tester-2",
+      "name": "unknown_ghost",
+      "role": "Tester",
+      "summary": "Supports testing and quality assurance.",
+      "fullDescription": "unknown_ghost helps test systems and identify server issues.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(72, 170, 132, 0.36)",
+      "sharedParents": [
+        "head-tester-1",
+        "head-tester-2"
+      ],
+      "children": []
+    },
+    {
+      "id": "tester-3",
+      "name": "DansUkVlogs",
+      "role": "Tester",
+      "summary": "Supports testing operations and bug reporting.",
+      "fullDescription": "DansUkVlogs helps review updates and support server quality assurance.",
+      "sectionCard": false,
+      "image": "https://yt3.ggpht.com/_NT8qsB2hFS6Drvpp9BLGYmFjHaGQvZusd3DLhTRkicj7Dsgu1sQfNzoZ1uonjMy61NWk9uUnA=s600-c-k-c0x00ffffff-no-rj-rp-mo",
+      "accentColor": "rgba(72, 170, 132, 0.36)",
+      "sharedParents": [
+        "head-tester-1",
+        "head-tester-2"
+      ],
+      "children": []
+    },
+    {
+      "id": "tester-4",
+      "name": "charlie shelby",
+      "role": "Tester",
+      "summary": "Supports testing and update reviews.",
+      "fullDescription": "charlie shelby helps identify bugs and improve update quality through testing.",
+      "sectionCard": false,
+      "image": "",
+      "accentColor": "rgba(72, 170, 132, 0.36)",
+      "sharedParents": [
+        "head-tester-1",
+        "head-tester-2"
+      ],
+      "children": []
+    }
+  ]
+}

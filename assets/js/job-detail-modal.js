@@ -1,4 +1,4 @@
-import { toCssImageUrl } from "./asset-url.js";
+import { toCssImageUrl } from "./asset-url.js?v=20260523c";
 
 export class JobDetailModal {
   constructor() {

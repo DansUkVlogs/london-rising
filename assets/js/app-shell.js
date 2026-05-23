@@ -1,11 +1,13 @@
-import { PageLoader } from "./page-loader.js";
-import { MobileMenu } from "./mobile-menu.js";
-import { HomePageController } from "./home-page-controller.js";
-import { CivJobsPageController } from "./civ-jobs-page-controller.js";
-import { CrimJobsPageController } from "./crim-jobs-page-controller.js";
-import { DepartmentPageController } from "./department-page-controller.js";
-import { RulesPageController } from "./rules-page-controller.js";
-import { buildLinkAttributes } from "./link-utils.js";
+import { PageLoader } from "./page-loader.js?v=20260523ac";
+import { MobileMenu } from "./mobile-menu.js?v=20260523ac";
+import { HomePageController } from "./home-page-controller.js?v=20260523ac";
+import { CivJobsPageController } from "./civ-jobs-page-controller.js?v=20260523ac";
+import { CrimJobsPageController } from "./crim-jobs-page-controller.js?v=20260523ac";
+import { DepartmentPageController } from "./department-page-controller.js?v=20260523ac";
+import { RulesPageController } from "./rules-page-controller.js?v=20260523ac";
+import { StaffStructurePageController } from "./staff-structure-page-controller.js?v=20260523ac";
+import { HeroParticleTrail } from "./hero-particle-trail.js?v=20260523ac";
+import { buildLinkAttributes } from "./link-utils.js?v=20260523ac";
 
 class StaticPageController {
   async mount() {}
@@ -23,6 +25,7 @@ export class AppShell {
     this.revealObserver = null;
     this.pageLoader = null;
     this.mobileMenu = null;
+    this.heroParticleTrail = new HeroParticleTrail();
   }
 
   init() {
@@ -151,6 +154,10 @@ export class AppShell {
       element.textContent = footer.copyrightSuffix ?? "";
     });
 
+    document.querySelectorAll("[data-footer-disclaimer]").forEach((element) => {
+      element.textContent = footer.disclaimer ?? "";
+    });
+
     document.querySelectorAll("[data-footer-meta-list]").forEach((element) => {
       element.innerHTML = (footer.metaItems ?? []).map((item) => `<li>${item}</li>`).join("");
     });
@@ -204,9 +211,13 @@ export class AppShell {
       routes: this.pageRoutes,
       defaultRoute: this.defaultRouteId,
       createController: (route, root) => this.createController(route, root),
+      onRouteChangeStart: () => {
+        this.heroParticleTrail.clear();
+      },
       onRouteLoaded: (_route, root) => {
         this.mobileMenu?.close({ returnFocus: false });
         this.refreshRevealTargets(root);
+        this.heroParticleTrail.mount(root);
       },
     });
 
@@ -221,6 +232,8 @@ export class AppShell {
         return new CivJobsPageController(root, this.dataLoader, route);
       case "crim-jobs":
         return new CrimJobsPageController(root, this.dataLoader, route);
+      case "staff-structure":
+        return new StaffStructurePageController(root, this.dataLoader, route);
       case "department":
         return new DepartmentPageController(root, route.id, this.dataLoader, route);
       case "rules":

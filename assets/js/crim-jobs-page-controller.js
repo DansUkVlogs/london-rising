@@ -1,6 +1,6 @@
-import { toCssImageUrl } from "./asset-url.js";
-import { buildStyleAttribute } from "./style-utils.js";
-import { JobDetailModal } from "./job-detail-modal.js";
+import { toCssImageUrl } from "./asset-url.js?v=20260523c";
+import { buildStyleAttribute } from "./style-utils.js?v=20260523c";
+import { JobDetailModal } from "./job-detail-modal.js?v=20260523c";
 
 export class CrimJobsPageController {
   constructor(root, dataLoader, route) {
@@ -97,7 +97,7 @@ export class CrimJobsPageController {
 
   render(pageData) {
     this.root.innerHTML = `
-      <header class="section-hero section-hero--crime" data-reveal>
+      <header class="section-hero section-hero--crime" data-reveal data-hero-trail>
         <p class="section-hero__eyebrow">${pageData.hero.eyebrow}</p>
         <h1 class="section-hero__title">${pageData.hero.title}</h1>
         <p class="section-hero__copy">${pageData.hero.description}</p>

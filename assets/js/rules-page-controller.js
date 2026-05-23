@@ -1,5 +1,5 @@
-import { RulesAccordion } from "./rules-accordion.js";
-import { toCssImageUrl } from "./asset-url.js";
+import { RulesAccordion } from "./rules-accordion.js?v=20260523ac";
+import { toCssImageUrl } from "./asset-url.js?v=20260523ac";
 
 export class RulesPageController {
   constructor(root, dataLoader, route) {
@@ -14,15 +14,16 @@ export class RulesPageController {
       return;
     }
 
-    const { hero, rules } = await this.dataLoader.loadNamed({
+    const { hero, rules, layout } = await this.dataLoader.loadNamed({
       hero: `${this.route.dataFolder}/hero.json`,
       rules: `${this.route.dataFolder}/rules.json`,
+      layout: `${this.route.dataFolder}/layout.json`,
     });
 
     this.applyHeroImage(hero.backgroundImage);
 
     this.root.innerHTML = `
-      <header class="section-hero section-hero--rules" data-reveal>
+      <header class="section-hero section-hero--rules" data-reveal data-hero-trail>
         <p class="section-hero__eyebrow">${hero.eyebrow}</p>
         <h1 class="section-hero__title">${hero.title}</h1>
         <p class="section-hero__copy">${hero.description}</p>
@@ -34,7 +35,7 @@ export class RulesPageController {
       </div>
     `;
 
-    this.rulesAccordion = new RulesAccordion(this.root, rules);
+    this.rulesAccordion = new RulesAccordion(this.root, rules, layout);
     this.rulesAccordion.mount();
   }
 

@@ -1,12 +1,10 @@
-import { RestartCountdown } from "./restart-countdown.js";
-import { ServerStatus } from "./server-status.js";
-import { toCssImageUrl } from "./asset-url.js";
-import { buildLinkAttributes } from "./link-utils.js";
-import { buildStyleAttribute } from "./style-utils.js";
-import { getCfxServerStatus } from "./cfx-status.js";
+import { RestartCountdown } from "./restart-countdown.js?v=20260523c";
+import { ServerStatus } from "./server-status.js?v=20260523c";
+import { toCssImageUrl } from "./asset-url.js?v=20260523c";
+import { buildLinkAttributes } from "./link-utils.js?v=20260523c";
+import { buildStyleAttribute } from "./style-utils.js?v=20260523c";
 
 const SERVER_STATUS_PATH = "assets/data/server/server-status.json";
-const SERVER_JOIN_CODE = "89ymqm";
 
 export class HomePageController {
   constructor(root, dataLoader, route) {
@@ -22,7 +20,7 @@ export class HomePageController {
       return;
     }
 
-    const [{ hero, about, schedule, careerSection, careerCards }, baseServerData] = await Promise.all([
+    const [{ hero, about, schedule, careerSection, careerCards }, serverData] = await Promise.all([
       this.dataLoader.loadNamed({
         hero: `${this.route.dataFolder}/hero.json`,
         about: `${this.route.dataFolder}/about.json`,
@@ -32,8 +30,6 @@ export class HomePageController {
       }),
       this.dataLoader.load(SERVER_STATUS_PATH),
     ]);
-
-    const serverData = await getCfxServerStatus(SERVER_JOIN_CODE, baseServerData);
 
     this.render({ hero, about, schedule, careerSection, careerCards });
     this.applyHeroImage(hero.backgroundImage);
@@ -67,7 +63,7 @@ export class HomePageController {
 
   render(pageData) {
     this.root.innerHTML = `
-      <div class="hero hero--home" data-reveal>
+      <div class="hero hero--home" data-reveal data-hero-trail>
         <div class="hero__backdrop hero__backdrop--home" aria-hidden="true"></div>
 
         <div class="hero__layout hero__layout--home">
@@ -102,7 +98,6 @@ export class HomePageController {
                   <span>/</span>
                   <span data-player-cap>250</span>
                 </div>
-                <span class="metric-card__meta">Peak today: <span data-player-peak>0</span></span>
               </div>
             </article>
 

@@ -11,7 +11,7 @@
     },
     {
       "id": "civ-jobs",
-      "label": "Civilian Jobs",
+      "label": "Civilians",
       "hash": "#/civ-jobs",
       "partial": "pages/civ-jobs.html",
       "pageType": "civ-jobs",
@@ -19,7 +19,7 @@
     },
     {
       "id": "crim-jobs",
-      "label": "Criminal Activities",
+      "label": "Criminals",
       "hash": "#/crim-jobs",
       "partial": "pages/crim-jobs.html",
       "pageType": "crim-jobs",
@@ -58,6 +58,14 @@
       "dataFolder": "assets/data/departments/mechanic"
     },
     {
+      "id": "staff-structure",
+      "label": "Staff Structure",
+      "hash": "#/staff-structure",
+      "partial": "pages/staff-structure.html",
+      "pageType": "staff-structure",
+      "dataFolder": "assets/data/staff-structure"
+    },
+    {
       "id": "rules",
       "label": "Rules",
       "hash": "#/rules",
@@ -67,14 +75,14 @@
     },
     {
       "id": "discord",
-      "label": "Discord",
+      "label": "Discord <img src='https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
       "href": "https://discord.gg/TYzFHV8f",
       "newTab": true,
       "buttonStyle": true
     },
     {
       "id": "join",
-      "label": "Join the City",
+      "label": "Join the City <img src='https://img.utdstc.com/icon/bcb/fc5/bcbfc5ae3d074d8734b9f51e64f7e95d4325485e0c51661dcf3167e45d768a8d:600' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
       "href": "https://cfx.re/join/89ymqm",
       "newTab": true,
       "buttonStyle": true

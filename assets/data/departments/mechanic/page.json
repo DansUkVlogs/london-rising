@@ -6,7 +6,7 @@
     "backgroundImage": "assets/images/heroes/mechanic-hero-v1.png",
     "actions": {
       "primary": {
-        "label": "Join the workshop - Apply In Game",
+        "label": "Join the workshop - Apply In Game <img src='https://img.utdstc.com/icon/bcb/fc5/bcbfc5ae3d074d8734b9f51e64f7e95d4325485e0c51661dcf3167e45d768a8d:600' alt='' style='width:25px;height:25px;display:inline-block;margin-left:4px; border-radius: 15px;'>",
         "href": "cfx.re/join/89ymqm",
         "newTab": true
       },

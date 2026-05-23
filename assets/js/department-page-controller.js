@@ -1,5 +1,5 @@
-import { toCssImageUrl } from "./asset-url.js";
-import { buildLinkAttributes } from "./link-utils.js";
+import { toCssImageUrl } from "./asset-url.js?v=20260523c";
+import { buildLinkAttributes } from "./link-utils.js?v=20260523c";
 
 export class DepartmentPageController {
   constructor(root, departmentKey, dataLoader, route) {
@@ -48,7 +48,7 @@ export class DepartmentPageController {
     const showReqMore = requirements.length > 5;
 
     this.root.innerHTML = `
-      <section class="department-page__hero reveal" data-reveal>
+      <section class="department-page__hero reveal" data-reveal data-hero-trail>
         <div class="department-page__hero-inner department-page__hero-inner--solo">
           <div class="department-page__copy">
             <p class="section-label">${pageConfig.hero.eyebrow}</p>
@@ -394,4 +394,3 @@ export class DepartmentPageController {
     this._modalEl = null;
   }
 }
-
