@@ -1,6 +1,8 @@
 # London Rising RP Website
 
-Project version: `v1.1.0`
+Project version: `v1.1.0`  
+README revision: `v1.1.0`  
+Last updated: `23 May 2026`
 
 This repository contains the London Rising RP website, built as a static single-page site for a FiveM roleplay community.
 
@@ -40,17 +42,22 @@ Then open:
 - `assets/data/` - site content and config
 - `assets/images/` - branding, hero, job, and placeholder images
 
-## Main Routes
+## Page Overview
 
-- `#/home`
-- `#/civ-jobs`
-- `#/crim-jobs`
-- `#/police`
-- `#/fire`
-- `#/ambulance`
-- `#/mechanic`
-- `#/staff-structure`
-- `#/rules`
+- `#/home` - landing page with the main hero, join/rules buttons, live server status, restart countdown, community/about panel, restart schedule, and career path cards.
+- `#/civ-jobs` - civilian jobs page with a hero section, job cards, modal job details, and supporting pillar panels.
+- `#/crim-jobs` - criminal activities page with a hero section, activity cards, modal details, and supporting pillar panels.
+- `#/police` - police department page with hero CTAs, divisions, requirements, progression preview, value cards, and modal detail views.
+- `#/fire` - fire brigade page with hero CTAs, divisions, requirements, progression preview, value cards, and modal detail views.
+- `#/ambulance` - ambulance service page with hero CTAs, divisions, requirements, progression preview, value cards, and modal detail views.
+- `#/mechanic` - mechanic/workshop page with hero CTAs, divisions, requirements, progression preview, value cards, and modal detail views.
+- `#/staff-structure` - interactive staff hierarchy page with a hero, zoomable org chart, shared reporting connectors, and profile modals.
+- `#/rules` - rules page with a hero, sidebar navigation, agreement card, and full rule sections.
+
+External navigation:
+
+- `Discord` - opens the community Discord in a new tab.
+- `Join the City` - opens the FiveM join link in a new tab.
 
 ## Documentation
 

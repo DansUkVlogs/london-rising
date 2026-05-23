@@ -1,7 +1,7 @@
 # London Rising RP Project Documentation
 
 Project version: `v1.1.0`  
-Documentation revision: `v1.0.0`  
+Documentation revision: `v1.1.0`  
 Last updated: `23 May 2026`
 
 ## What This Project Is
@@ -177,69 +177,196 @@ Runtime tree:
 \---pages
 ```
 
-## How The Site Works
+## Page-By-Page Breakdown
 
-### Home
+### `#/home`
 
-The home page loads:
+Purpose:
 
-- hero copy and CTA buttons
-- an about panel
-- a restart schedule panel
-- a career-strip section
-- live server status
-- a live restart countdown
+- landing page and main entry point into the site
 
-It uses `assets/data/home/*` plus `assets/data/server/server-status.json`.
+What it displays:
 
-### Civilians
+- the primary London Rising hero
+- main CTA buttons for joining the city and reading the rules
+- a live server status card
+- a live restart countdown card
+- an about/community panel
+- a restart schedule panel populated from server schedule data
+- a career path card grid linking into departments and role paths
 
-The civilians route uses a hero, a rail of clickable job cards, and a short pillar section. Clicking a card opens `JobDetailModal`.
+What it does:
 
-### Criminals
+- loads content from `assets/data/home/*`
+- loads live/fallback server data from `assets/data/server/server-status.json`
+- mounts `ServerStatus`
+- mounts `RestartCountdown`
 
-The criminals route mirrors the civilians route but uses criminal activity data and its own hero imagery.
+### `#/civ-jobs`
 
-### Department Pages
+Purpose:
 
-Police, Fire, Ambulance, and Mechanic all share the same controller. Each route renders:
+- showcases civilian job paths available on the server
 
-- one department hero
-- CTA buttons
-- divisions preview
-- requirements preview
-- progression preview
-- value cards
-- modal overlays for full divisions, full requirements, and the full progression tree
+What it displays:
 
-### Rules
+- a civilian jobs hero section
+- a rail of clickable job cards with images, numbers, summaries, and tags
+- modal detail views for each job
+- supporting pillar panels underneath the cards
 
-The rules page now has two data layers:
+What it does:
 
-- `hero.json` for hero content
-- `layout.json` for sidebar card copy and agreement-card config
+- loads hero, jobs, and pillar content from `assets/data/civ-jobs/`
+- opens `JobDetailModal` when a job card is clicked or keyboard-activated
 
-`RulesAccordion` renders:
+### `#/crim-jobs`
 
-- a sidebar card
-- rule navigation buttons
-- an agreement card with a generated SVG badge
-- rule sections in the main content column
+Purpose:
 
-### Staff Structure
+- showcases criminal activity paths and underground roleplay opportunities
 
-The staff page is now a full interactive org chart instead of a simple list.
+What it displays:
 
-It supports:
+- a criminal activities hero section
+- clickable activity cards with images, numbers, summaries, and tags
+- modal detail views for each activity
+- supporting pillar panels underneath the cards
 
-- section cards and normal profile cards
-- recursive hierarchy rendering
-- flat reference-based node input
-- shared-parent relationships
-- SVG connector overlays for shared reporting lines
-- click-to-open profile modal
-- zoom and pan controls
-- fallback profile images
+What it does:
+
+- loads hero, activities, and pillar content from `assets/data/crim-jobs/`
+- opens `JobDetailModal` for each activity
+
+### `#/police`
+
+Purpose:
+
+- presents the police department route and recruitment/progression information
+
+What it displays:
+
+- a police hero with CTA buttons
+- a divisions preview panel
+- a requirements preview panel
+- a progression preview panel
+- a grid of police value cards
+- modals for full divisions, full requirements, and full progression
+
+What it does:
+
+- loads data from `assets/data/departments/police/`
+- uses the shared `DepartmentPageController`
+
+### `#/fire`
+
+Purpose:
+
+- presents the fire brigade route and department structure
+
+What it displays:
+
+- a fire brigade hero with CTA buttons
+- a divisions preview panel
+- a requirements preview panel
+- a progression preview panel
+- a grid of fire value cards
+- modals for full divisions, full requirements, and full progression
+
+What it does:
+
+- loads data from `assets/data/departments/fire/`
+- uses the shared `DepartmentPageController`
+
+### `#/ambulance`
+
+Purpose:
+
+- presents the ambulance service route and medical department structure
+
+What it displays:
+
+- an ambulance hero with CTA buttons
+- a divisions preview panel
+- a requirements preview panel
+- a progression preview panel
+- a grid of ambulance value cards
+- modals for full divisions, full requirements, and full progression
+
+What it does:
+
+- loads data from `assets/data/departments/ambulance/`
+- uses the shared `DepartmentPageController`
+
+### `#/mechanic`
+
+Purpose:
+
+- presents the mechanic/workshop route and business/progression structure
+
+What it displays:
+
+- a mechanic hero with CTA buttons
+- a divisions preview panel
+- a requirements preview panel
+- a progression preview panel
+- a grid of mechanic value cards
+- modals for full divisions, full requirements, and full progression
+
+What it does:
+
+- loads data from `assets/data/departments/mechanic/`
+- uses the shared `DepartmentPageController`
+
+### `#/staff-structure`
+
+Purpose:
+
+- displays the current staff hierarchy and reporting structure
+
+What it displays:
+
+- a staff hero section
+- a chart heading with section label, title, description, and helper pill
+- a zoomable and pannable chart canvas
+- section cards and staff profile cards
+- shared-parent connector lines
+- a profile modal for deeper staff information
+
+What it does:
+
+- loads hero and chart data from `assets/data/staff-structure/`
+- normalizes flat or nested staff structures
+- mounts `StaffChartViewport`
+- mounts `StaffSharedConnectors`
+- mounts `StaffProfileModal`
+
+### `#/rules`
+
+Purpose:
+
+- presents the server rulebook in a navigable long-form layout
+
+What it displays:
+
+- a rules hero section
+- a sidebar card with title text
+- rule-category navigation buttons
+- an agreement card with a generated justice-badge icon
+- full rule sections and rule items in the main content column
+
+What it does:
+
+- loads hero, rule data, and layout config from `assets/data/rules/`
+- mounts `RulesAccordion`
+- keeps the sidebar active state synced with the visible rule section
+
+### External Navigation Items
+
+These are not internal pages, but they are part of the visible navigation:
+
+- `Discord` - opens the Discord server in a new tab
+- `Join the City` - opens the FiveM join link in a new tab
 
 ## Root File
 
