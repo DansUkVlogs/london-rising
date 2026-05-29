@@ -1,6 +1,21 @@
 {
-  "eyebrow": "Build your future",
+  "eyebrow": "Civilian careers",
   "title": "Civilian Jobs",
-  "description": "London runs on ordinary people doing extraordinary work. Choose a path, build a routine, and let your character story grow through the city economy.",
-  "backgroundImage": "assets/images/heroes/civ-jobs-hero-v1.png"
+  "description": "London Rising works best when the city feels lived in. These roles give characters routine, money, reputation, and a believable place in the wider economy, whether you want to work routes, build a trade, or step into high-trust professional RP.",
+  "backgroundImage": "assets/images/civ-jobs/civ-jobs-hero-20260529.png",
+  "backgroundPosition": "72% center",
+  "highlights": [
+    {
+      "value": "21",
+      "label": "Open civilian roles"
+    },
+    {
+      "value": "5",
+      "label": "Career sectors"
+    },
+    {
+      "value": "Up to £15,000",
+      "label": "Listed salary range"
+    }
+  ]
 }

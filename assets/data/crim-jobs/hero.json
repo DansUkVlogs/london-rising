@@ -1,7 +1,21 @@
 {
-  "eyebrow": "Work the shadows",
+  "eyebrow": "Build your reputation",
   "title": "Criminal Activities",
-  "description": "For characters willing to take risks, London has an underground economy full of quick money, organised crews, and high-stakes opportunities.",
-  "backgroundImage": "assets/images/heroes/criminal-hero.png",
-  "backgroundPosition": "center 58%"
+  "description": "London's underworld works best when crime has layers. These routes let crews start with street money, step into robbery and fraud, and build toward the kind of heists that shape the whole city.",
+  "backgroundImage": "assets/images/crim-jobs/crim-jobs-hero-20260529.png",
+  "backgroundPosition": "center 54%",
+  "highlights": [
+    {
+      "value": "18",
+      "label": "Criminal activities"
+    },
+    {
+      "value": "5",
+      "label": "Underworld lanes"
+    },
+    {
+      "value": "1",
+      "label": "Coming soon feature"
+    }
+  ]
 }

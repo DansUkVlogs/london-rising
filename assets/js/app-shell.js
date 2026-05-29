@@ -1,13 +1,13 @@
-import { PageLoader } from "./page-loader.js?v=20260529d";
-import { MobileMenu } from "./mobile-menu.js?v=20260529d";
-import { HomePageController } from "./home-page-controller.js?v=20260529d";
-import { CivJobsPageController } from "./civ-jobs-page-controller.js?v=20260529d";
-import { CrimJobsPageController } from "./crim-jobs-page-controller.js?v=20260529d";
-import { DepartmentPageController } from "./department-page-controller.js?v=20260529d";
-import { RulesPageController } from "./rules-page-controller.js?v=20260529d";
-import { StaffStructurePageController } from "./staff-structure-page-controller.js?v=20260529d";
-import { HeroParticleTrail } from "./hero-particle-trail.js?v=20260529d";
-import { buildLinkAttributes } from "./link-utils.js?v=20260529d";
+import { PageLoader } from "./page-loader.js?v=20260529g";
+import { MobileMenu } from "./mobile-menu.js?v=20260529g";
+import { HomePageController } from "./home-page-controller.js?v=20260529g";
+import { CivJobsPageController } from "./civ-jobs-page-controller.js?v=20260529g";
+import { CrimJobsPageController } from "./crim-jobs-page-controller.js?v=20260529g";
+import { DepartmentPageController } from "./department-page-controller.js?v=20260529g";
+import { RulesPageController } from "./rules-page-controller.js?v=20260529g";
+import { StaffStructurePageController } from "./staff-structure-page-controller.js?v=20260529g";
+import { HeroParticleTrail } from "./hero-particle-trail.js?v=20260529g";
+import { buildLinkAttributes } from "./link-utils.js?v=20260529g";
 
 class StaticPageController {
   async mount() {}

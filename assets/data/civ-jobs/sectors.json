@@ -1,0 +1,32 @@
+[
+  {
+    "id": "legal-public",
+    "label": "Law & Public Service",
+    "title": "Careers built on trust, procedure, and public visibility.",
+    "description": "These roles suit players who want influence through judgement, communication, evidence, and professional standards."
+  },
+  {
+    "id": "transport-logistics",
+    "label": "Transport & Delivery",
+    "title": "Keep London moving from route to route.",
+    "description": "Road-based work creates constant citywide contact, reliable routines, and some of the most naturally social civilian RP."
+  },
+  {
+    "id": "industry-trades",
+    "label": "Industry & Skilled Trades",
+    "title": "Build, repair, recover, and power the city.",
+    "description": "Hands-on jobs for characters who prefer tools, callouts, heavy work, and practical responsibility over desk-based scenes."
+  },
+  {
+    "id": "land-sea",
+    "label": "Land & Sea Industries",
+    "title": "Rural and coastal work with tougher conditions.",
+    "description": "These careers lean into endurance, weather, machinery, and the kind of early-start routine that makes a character feel lived in."
+  },
+  {
+    "id": "service-hospitality",
+    "label": "Service & Hospitality",
+    "title": "Frontline jobs that keep local life ticking.",
+    "description": "Customer-facing work is one of the fastest ways to build contacts, repeat faces, and everyday reputation across the city."
+  }
+]

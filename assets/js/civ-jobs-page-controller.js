@@ -1,6 +1,6 @@
-import { toCssImageUrl } from "./asset-url.js?v=20260523c";
-import { buildStyleAttribute } from "./style-utils.js?v=20260523c";
-import { JobDetailModal } from "./job-detail-modal.js?v=20260523c";
+import { toCssImageUrl } from "./asset-url.js?v=20260529g";
+import { buildStyleAttribute } from "./style-utils.js?v=20260529g";
+import { JobDetailModal } from "./job-detail-modal.js?v=20260529g";
 
 export class CivJobsPageController {
   constructor(root, dataLoader, route) {
@@ -9,6 +9,7 @@ export class CivJobsPageController {
     this.route = route;
     this.jobModal = new JobDetailModal();
     this.jobsById = new Map();
+    this.sectorsById = new Map();
     this.handleRootClick = this.handleRootClick.bind(this);
     this.handleRootKeydown = this.handleRootKeydown.bind(this);
   }
@@ -22,10 +23,21 @@ export class CivJobsPageController {
       hero: `${this.route.dataFolder}/hero.json`,
       jobs: `${this.route.dataFolder}/jobs.json`,
       pillars: `${this.route.dataFolder}/pillars.json`,
+      sectors: `${this.route.dataFolder}/sectors.json`,
     });
 
-    this.jobsById = new Map(pageData.jobs.map((job) => [job.id, job]));
-    this.render(pageData);
+    this.sectorsById = new Map(pageData.sectors.map((sector) => [sector.id, sector]));
+
+    const numbersByJobId = this.buildDisplayNumbers(pageData.jobs, pageData.sectors);
+
+    const jobs = pageData.jobs.map((job) => ({
+      ...job,
+      number: numbersByJobId.get(job.id) ?? job.number,
+      sectorLabel: this.sectorsById.get(job.sectorId)?.label ?? "Civilian role",
+    }));
+
+    this.jobsById = new Map(jobs.map((job) => [job.id, job]));
+    this.render({ ...pageData, jobs });
     this.applyHeroSettings(pageData.hero);
     this.jobModal.mount();
     this.bindEvents();
@@ -56,6 +68,29 @@ export class CivJobsPageController {
       "--job-card-media-image": job.backgroundImage ? toCssImageUrl(job.backgroundImage) : "",
       "--job-card-accent": job.accentColor,
     });
+  }
+
+  buildDisplayNumbers(jobs = [], sectors = []) {
+    const numbersByJobId = new Map();
+    let currentNumber = 1;
+
+    sectors.forEach((sector) => {
+      jobs
+        .filter((job) => job.sectorId === sector.id)
+        .forEach((job) => {
+          numbersByJobId.set(job.id, String(currentNumber).padStart(2, "0"));
+          currentNumber += 1;
+        });
+    });
+
+    jobs.forEach((job) => {
+      if (!numbersByJobId.has(job.id)) {
+        numbersByJobId.set(job.id, String(currentNumber).padStart(2, "0"));
+        currentNumber += 1;
+      }
+    });
+
+    return numbersByJobId;
   }
 
   bindEvents() {
@@ -95,10 +130,33 @@ export class CivJobsPageController {
     this.jobModal.open(job, { label: "Civilian job" });
   }
 
+  renderHeroHighlights(highlights = []) {
+    if (!highlights.length) {
+      return "";
+    }
+
+    return `
+      <div class="jobs-overview" data-reveal>
+        ${highlights
+          .map(
+            (highlight) => `
+              <article class="panel jobs-overview__item">
+                <strong class="jobs-overview__value">${highlight.value}</strong>
+                <span class="jobs-overview__label">${highlight.label}</span>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
   renderJobCard(job) {
+    const requirementsPreview = (job.requirements ?? []).slice(0, 2);
+
     return `
       <article
-        class="job-card job-card--clickable job-card--${job.variant}"
+        class="job-card job-card--civilian job-card--clickable job-card--${job.variant}"
         ${this.buildJobStyle(job)}
         tabindex="0"
         role="button"
@@ -112,17 +170,47 @@ export class CivJobsPageController {
         </div>
         <div class="job-card__body">
           <div class="job-card__copy">
-            <h2>${job.title}</h2>
+            <p class="job-card__eyebrow">${job.sectorLabel}</p>
+            <div class="job-card__headline">
+              <h2>${job.title}</h2>
+              <span class="job-card__salary">${job.salary ?? "Salary varies"}</span>
+            </div>
             <p>${job.description}</p>
-          </div>
-          <div class="job-card__aside">
-            <ul class="job-card__tags">
-              ${(job.tags ?? []).map((tag) => `<li>${tag}</li>`).join("")}
-            </ul>
-            <span class="job-card__arrow" aria-hidden="true">&rarr;</span>
+            <div class="job-card__footer">
+              <div class="job-card__requirements">
+                <span class="job-card__requirements-label">Requirements</span>
+                <ul class="job-card__tags">
+                  ${requirementsPreview.map((requirement) => `<li>${requirement}</li>`).join("")}
+                </ul>
+              </div>
+              <span class="job-card__arrow" aria-hidden="true">&rarr;</span>
+            </div>
           </div>
         </div>
       </article>
+    `;
+  }
+
+  renderSectorSection(sector, jobs = []) {
+    const sectorJobs = jobs.filter((job) => job.sectorId === sector.id);
+    if (!sectorJobs.length) {
+      return "";
+    }
+
+    return `
+      <section class="panel jobs-sector" data-reveal>
+        <div class="jobs-sector__heading">
+          <div>
+            <p class="section-label">${sector.label}</p>
+            <h2 class="section-title jobs-sector__title">${sector.title}</h2>
+          </div>
+          <p class="jobs-sector__copy">${sector.description}</p>
+        </div>
+
+        <div class="jobs-sector__grid">
+          ${sectorJobs.map((job) => this.renderJobCard(job)).join("")}
+        </div>
+      </section>
     `;
   }
 
@@ -134,8 +222,10 @@ export class CivJobsPageController {
         <p class="section-hero__copy">${pageData.hero.description}</p>
       </header>
 
-      <div class="job-rail" data-reveal>
-        ${pageData.jobs.map((job) => this.renderJobCard(job)).join("")}
+      ${this.renderHeroHighlights(pageData.hero.highlights)}
+
+      <div class="jobs-sectors">
+        ${pageData.sectors.map((sector) => this.renderSectorSection(sector, pageData.jobs)).join("")}
       </div>
 
       <section class="jobs-pillars">

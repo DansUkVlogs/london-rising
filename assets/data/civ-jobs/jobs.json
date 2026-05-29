@@ -1,86 +1,380 @@
 [
   {
-    "id": "taxi",
-    "variant": "taxi",
+    "id": "solicitor",
+    "variant": "solicitor",
+    "sectorId": "legal-public",
     "number": "01",
-    "backgroundImage": "assets/images/opportunities/civ-taxi.png",
-    "accentColor": "rgba(128, 98, 24, 0.86)",
-    "title": "Taxi Driver",
-    "description": "Pick up passengers, learn the city, and earn through steady, social roleplay.",
-    "longDescription": "Taxi driving is one of the best ways to build a grounded civilian story in London. You can work airport runs, late-night pickups, and local fares while meeting every kind of character the city throws at you.\n\nIt suits players who enjoy conversation-heavy roleplay, regular cash flow, and the feeling of learning the city district by district. The longer you stay consistent, the easier it becomes to turn a simple cab shift into connections, favours, and long-term reputation.",
-    "tags": [
-      "Earn respect",
-      "Flexible hours"
+    "backgroundImage": "assets/images/civ-jobs/job-solicitor.png",
+    "accentColor": "rgba(112, 78, 35, 0.88)",
+    "title": "Solicitor",
+    "salary": "£6,500 - £11,500",
+    "description": "Advise clients, prepare cases, and turn civilian disputes into serious courtroom roleplay.",
+    "longDescription": "Solicitors sit at the centre of civilian legal RP. You can meet clients, draft paperwork, prepare defences, and guide people through the consequences of what happens across the city.\n\nIt is a strong path for characters who want influence without wearing a uniform. The role rewards patience, credibility, and the ability to turn conversation, evidence, and procedure into long-form stories.",
+    "requirements": [
+      "Law degree",
+      "Bar qualification",
+      "Courtroom experience",
+      "Professional ethics"
     ]
   },
   {
-    "id": "bus",
-    "variant": "bus",
-    "number": "02",
-    "backgroundImage": "assets/images/opportunities/civ-bus.png",
-    "accentColor": "rgba(124, 36, 25, 0.9)",
-    "title": "Bus Driver",
-    "description": "Serve the route, support the public, and make the city feel alive on every shift.",
-    "longDescription": "Bus driving gives your character a visible place in the rhythm of the city. Running routes, stopping for passengers, and dealing with whatever happens onboard can create some of the most naturally social scenes on the server.\n\nIt is a strong choice for players who want reliable work with room for personality, conflict, and routine. A calm shift can become public service roleplay, transport support, or a front-row seat to the chaos happening across London.",
-    "tags": [
-      "Steady income",
-      "Shift work"
+    "id": "offshore-oil-worker",
+    "variant": "offshore-oil-worker",
+    "sectorId": "industry-trades",
+    "number": "08",
+    "backgroundImage": "assets/images/civ-jobs/job-offshore-oil-worker.png",
+    "accentColor": "rgba(46, 88, 112, 0.86)",
+    "title": "Offshore Oil Worker",
+    "salary": "£5,200 - £9,500",
+    "description": "Take high-risk industrial shifts offshore where endurance, safety, and teamwork matter every day.",
+    "longDescription": "Offshore work is one of the toughest civilian roles on the list. It suits characters who want serious industrial RP, hard conditions, and the feeling of earning every pay packet far from the comfort of the city.\n\nBecause the environment is isolated and demanding, the job naturally creates strong crew dynamics, routine pressure, and realistic risk management. It is ideal for players who want heavier work stories instead of casual filler shifts.",
+    "requirements": [
+      "Safety induction",
+      "Physical fitness",
+      "Shift availability",
+      "Mechanical awareness"
     ]
   },
   {
-    "id": "delivery",
-    "variant": "delivery",
+    "id": "bus-driver",
+    "variant": "bus-driver",
+    "sectorId": "transport-logistics",
     "number": "03",
-    "backgroundImage": "assets/images/opportunities/civ-delivery.png",
-    "accentColor": "rgba(25, 55, 110, 0.84)",
-    "title": "Delivery Driver",
-    "description": "Move parcels and specialist consignments across London on a schedule that rewards speed.",
-    "longDescription": "Delivery work is ideal for characters who like movement, timing, and juggling multiple priorities at once. Small courier jobs can grow into higher-value contracts, urgent city drops, and specialist consignments that carry real pressure.\n\nBecause the role naturally takes you across every borough, it also becomes a strong bridge into business roleplay, logistics, and chance encounters. A simple route can quickly turn into a chase against time or a favour that opens bigger opportunities.",
-    "tags": [
-      "High demand",
-      "Fast paced"
+    "backgroundImage": "assets/images/civ-jobs/job-bus-driver.png",
+    "accentColor": "rgba(136, 43, 28, 0.9)",
+    "title": "Bus Driver",
+    "salary": "£2,600 - £4,300",
+    "description": "Run public routes, keep time, and make the city feel alive on every shift.",
+    "longDescription": "Bus driving puts your character directly into the daily rhythm of London. Every route creates organic encounters with commuters, stranded players, city workers, and whoever else happens to get on board.\n\nIt is perfect for reliable civilian RP with strong public visibility. Calm shifts can turn into service roleplay, live incidents, or the kind of regular routine that slowly builds a known face across the city.",
+    "requirements": [
+      "PCV licence",
+      "Clean driving record",
+      "Customer service training",
+      "Route discipline"
     ]
   },
   {
-    "id": "sanitation",
-    "variant": "sanitation",
+    "id": "judge",
+    "variant": "judge",
+    "sectorId": "legal-public",
     "number": "04",
-    "backgroundImage": "assets/images/opportunities/civ-sanitation.png",
-    "accentColor": "rgba(26, 92, 58, 0.84)",
-    "title": "Sanitation Worker",
-    "description": "Keep the city clean and stable with reliable public service progression and team routes.",
-    "longDescription": "Sanitation work gives civilian roleplay a practical backbone and a proper sense of public service. It is perfect for players who want teamwork, scheduled routes, and a role that quietly supports the whole server economy.\n\nThe job can be played as honest long-term employment, a stepping stone into council contracts, or the kind of steady work that shapes a believable everyday character. It is dependable, visible, and full of chances to interact with the wider community.",
-    "tags": [
-      "City essential",
-      "Stable role"
+    "backgroundImage": "assets/images/civ-jobs/job-judge.png",
+    "accentColor": "rgba(108, 46, 32, 0.9)",
+    "title": "Judge",
+    "salary": "£9,500 - £15,000",
+    "description": "Preside over the courtroom, set the tone, and bring authority to the legal system.",
+    "longDescription": "Judges shape the standard of legal RP more than almost any other civilian role. They set procedure, control the room, and make the final call when disputes, prosecutions, and appeals reach the bench.\n\nThis role fits characters with presence, patience, and a serious respect for process. It is less about speed and more about judgement, command, and keeping courtroom scenes credible for everyone involved.",
+    "requirements": [
+      "Extensive legal experience",
+      "Judicial appointment",
+      "Impeccable record",
+      "Strong leadership"
     ]
   },
   {
-    "id": "logistics",
-    "variant": "logistics",
+    "id": "hgv-driver",
+    "variant": "hgv-driver",
+    "sectorId": "transport-logistics",
     "number": "05",
-    "backgroundImage": "assets/images/opportunities/civ-logistics.png",
-    "accentColor": "rgba(112, 70, 18, 0.88)",
-    "title": "Logistics Operator",
-    "description": "Move goods, coordinate routes, and scale up into larger contracts with the right reputation.",
-    "longDescription": "Logistics is where ordinary deliveries start turning into serious commercial roleplay. Characters in this lane can move stock, organise routes, coordinate larger shipments, and become trusted operators for businesses that need things done properly.\n\nIt works especially well for players who enjoy progression and responsibility. As your reputation grows, the role can evolve from basic runs into contract management, team-led operations, and the sort of business presence that changes how people see your character.",
-    "tags": [
-      "Big contracts",
-      "Team focused"
+    "backgroundImage": "assets/images/civ-jobs/job-hgv-driver.png",
+    "accentColor": "rgba(92, 74, 34, 0.86)",
+    "title": "HGV Driver",
+    "salary": "£3,400 - £6,100",
+    "description": "Move heavy loads, cover serious distance, and anchor the commercial side of the economy.",
+    "longDescription": "HGV driving gives players long-haul civilian work with visible responsibility. You are moving weight, timing deliveries, and dealing with the sort of logistics that make businesses and supply chains feel real.\n\nIt suits characters who like quieter, disciplined RP with the option for pressure when routes go wrong. Even a simple run can become convoy support, business work, or a problem that ripples into other stories.",
+    "requirements": [
+      "HGV licence",
+      "Clean driving record",
+      "Physical fitness",
+      "Long-distance availability"
     ]
   },
   {
-    "id": "legal",
-    "variant": "legal",
-    "number": "06",
-    "backgroundImage": "assets/images/opportunities/civ-legal.png",
-    "accentColor": "rgba(73, 52, 118, 0.82)",
-    "title": "Legal Professional",
-    "description": "Represent clients, advise organisations, and bring courtroom roleplay into the city economy.",
-    "longDescription": "Legal roleplay gives civilian characters influence without needing a badge or a siren. You can represent clients, advise businesses, challenge cases, and turn disputes into proper courtroom stories that affect more than one scene.\n\nThis path suits players who like long-form character building, structured roleplay, and using words, strategy, and reputation as their main tools. A good legal professional can become one of the most connected people in the city.",
-    "tags": [
-      "High reputation",
-      "Career path"
+    "id": "construction-worker",
+    "variant": "construction-worker",
+    "sectorId": "industry-trades",
+    "number": "09",
+    "backgroundImage": "assets/images/civ-jobs/job-construction-worker.png",
+    "accentColor": "rgba(119, 68, 24, 0.88)",
+    "title": "Construction Worker",
+    "salary": "£2,500 - £4,700",
+    "description": "Build new sites, support crews, and keep the growing city moving upward.",
+    "longDescription": "Construction work is grounded, practical, and full of believable civilian interaction. It gives characters a reason to be out on active sites, working with crews, tools, and schedules that make the city feel under constant development.\n\nThis path works well for players who enjoy teamwork, hands-on labour, and the satisfaction of visible progress. It can stay simple or evolve into contractor, foreman, or business-linked roleplay over time.",
+    "requirements": [
+      "Valid work permit",
+      "Site safety knowledge",
+      "Teamwork skills",
+      "Clean background check"
+    ]
+  },
+  {
+    "id": "agricultural-worker",
+    "variant": "agricultural-worker",
+    "sectorId": "land-sea",
+    "number": "12",
+    "backgroundImage": "assets/images/civ-jobs/job-agricultural-worker.png",
+    "accentColor": "rgba(58, 95, 54, 0.86)",
+    "title": "Agricultural Worker",
+    "salary": "£2,100 - £3,900",
+    "description": "Work the land, handle equipment, and bring rural industry into the wider server economy.",
+    "longDescription": "Agricultural work adds a rural backbone to city-facing roleplay. It gives characters a reason to be up early, operating machinery, dealing with weather, and producing something the rest of the world relies on.\n\nIt is ideal for players who want a tougher, outdoor rhythm instead of constant urban scenes. The role feels honest, routine-driven, and well suited to slow-burn character building.",
+    "requirements": [
+      "Physical endurance",
+      "Agricultural knowledge",
+      "Equipment operation",
+      "Weather adaptability"
+    ]
+  },
+  {
+    "id": "scrapyard-worker",
+    "variant": "scrapyard-worker",
+    "sectorId": "industry-trades",
+    "number": "10",
+    "backgroundImage": "assets/images/civ-jobs/job-scrapyard-worker.png",
+    "accentColor": "rgba(125, 71, 43, 0.88)",
+    "title": "Scrapyard Worker",
+    "salary": "£2,200 - £3,900",
+    "description": "Sort salvage, process scrap, and turn industrial waste into useful city-side work.",
+    "longDescription": "Scrapyard work is rougher around the edges but still firmly civilian when played properly. It brings legal salvage, heavy material handling, and yard-based routine into the economy without leaning into outright criminality.\n\nThis is a good fit for characters who want a hands-on trade with a bit more grit. The setting naturally supports deals, supply contacts, and the kind of blue-collar RP that gives the city texture.",
+    "requirements": [
+      "No active warrants",
+      "Basic tool handling",
+      "Protective gear required",
+      "Legal salvage only"
+    ]
+  },
+  {
+    "id": "forestry-worker",
+    "variant": "forestry-worker",
+    "sectorId": "land-sea",
+    "number": "13",
+    "backgroundImage": "assets/images/civ-jobs/job-forestry-worker.png",
+    "accentColor": "rgba(45, 91, 68, 0.88)",
+    "title": "Forestry Worker",
+    "salary": "£2,800 - £5,000",
+    "description": "Handle timber, work safely outdoors, and bring a harder rural trade into your story.",
+    "longDescription": "Forestry work is physically demanding and strongly tied to equipment, terrain, and safety. It is a role for characters who feel more natural in difficult outdoor conditions than behind a desk or a shop counter.\n\nBecause the job depends on judgement and procedure, it creates believable pressure without needing forced drama. It is a solid choice for grounded players who want a practical, outdoors-first profession.",
+    "requirements": [
+      "Physical strength",
+      "Chainsaw operation",
+      "Safety awareness",
+      "Outdoor work"
+    ]
+  },
+  {
+    "id": "bartender",
+    "variant": "bartender",
+    "sectorId": "service-hospitality",
+    "number": "15",
+    "backgroundImage": "assets/images/civ-jobs/job-bartender.png",
+    "accentColor": "rgba(129, 54, 43, 0.9)",
+    "title": "Bartender",
+    "salary": "£1,900 - £3,600",
+    "description": "Work the bar, read the room, and build one of the most social routines in the city.",
+    "longDescription": "Bartending is one of the easiest ways to put your character at the centre of conversation-heavy RP. You meet regulars, hear rumours, manage difficult customers, and become part of the night-time life of the server.\n\nIt is a role that rewards personality as much as discipline. A good bartender can become a trusted face, a source of information, or the person who quietly sees every story before the rest of the city hears about it.",
+    "requirements": [
+      "Mixology knowledge",
+      "Customer service",
+      "Night availability",
+      "Alcohol service awareness"
+    ]
+  },
+  {
+    "id": "delivery-driver",
+    "variant": "delivery-driver",
+    "sectorId": "transport-logistics",
+    "number": "04",
+    "backgroundImage": "assets/images/civ-jobs/job-delivery-driver.png",
+    "accentColor": "rgba(38, 66, 118, 0.86)",
+    "title": "Delivery Driver",
+    "salary": "£2,200 - £4,000",
+    "description": "Cover routes, move parcels, and stay on schedule across every borough of the map.",
+    "longDescription": "Delivery driving is one of the most flexible civilian roles on the server. It puts your character into motion, creates constant opportunities for encounters, and makes even a normal route feel like part of the wider economy.\n\nThe work is easy to understand but still gives room for pressure, timing, and progression. It is ideal for players who want steady movement instead of one static workplace every shift.",
+    "requirements": [
+      "Valid driving licence",
+      "Safe driving",
+      "Reliability",
+      "No active warrants"
+    ]
+  },
+  {
+    "id": "commercial-fisherman",
+    "variant": "commercial-fisherman",
+    "sectorId": "land-sea",
+    "number": "14",
+    "backgroundImage": "assets/images/civ-jobs/job-commercial-fisherman.png",
+    "accentColor": "rgba(42, 86, 109, 0.88)",
+    "title": "Commercial Fisherman",
+    "salary": "£3,200 - £6,200",
+    "description": "Work the harbour, take early shifts, and turn the coast into a real economic lane.",
+    "longDescription": "Commercial fishing brings a distinct rhythm to civilian roleplay: early starts, harsh weather, heavy gear, and a working relationship with the sea instead of the street. It feels tougher and more specialised than a casual side job.\n\nThis is a good path for characters who want routine, endurance, and a believable trade with clear risk and reward. It stands out without needing to rely on chaos.",
+    "requirements": [
+      "Swimming ability",
+      "Boat operation",
+      "Early morning availability",
+      "Weather tolerance"
+    ]
+  },
+  {
+    "id": "postal-worker",
+    "variant": "postal-worker",
+    "sectorId": "transport-logistics",
+    "number": "05",
+    "backgroundImage": "assets/images/civ-jobs/job-postal-worker.png",
+    "accentColor": "rgba(154, 55, 46, 0.88)",
+    "title": "Postal Worker",
+    "salary": "£2,200 - £3,900",
+    "description": "Deliver letters and parcels with a route-based role that keeps you visible and reliable.",
+    "longDescription": "Postal work is simple in concept and excellent in practice. It gives characters a routine, a reason to visit homes and businesses all over the city, and a role built around reliability rather than spectacle.\n\nBecause it is dependable and public-facing, it suits players who enjoy steady work and everyday interactions. The job helps build reputation the old-fashioned way: by being known as someone who always turns up.",
+    "requirements": [
+      "Valid driving licence",
+      "Good communication",
+      "Route discipline",
+      "No active warrants"
+    ]
+  },
+  {
+    "id": "electrician",
+    "variant": "electrician",
+    "sectorId": "industry-trades",
+    "number": "14",
+    "backgroundImage": "assets/images/civ-jobs/job-electrician.png",
+    "accentColor": "rgba(47, 93, 124, 0.88)",
+    "title": "Electrician",
+    "salary": "£4,300 - £7,600",
+    "description": "Take technical callouts, solve faults, and keep the city's systems running properly.",
+    "longDescription": "Electricians bring skilled trade RP into homes, businesses, and infrastructure sites. The job feels more technical than general labour and works well for characters who want competence, trust, and problem-solving to define their story.\n\nIt is a natural fit for callout-based scenes, contract work, and longer business arcs. If you want a role that feels useful in almost every part of the map, this is one of the strongest options.",
+    "requirements": [
+      "Electrical certification",
+      "Safety training",
+      "Callout availability",
+      "Clean background check"
+    ]
+  },
+  {
+    "id": "cps-prosecutor",
+    "variant": "cps-prosecutor",
+    "sectorId": "legal-public",
+    "number": "15",
+    "backgroundImage": "assets/images/civ-jobs/job-cps-prosecutor.png",
+    "accentColor": "rgba(108, 52, 36, 0.9)",
+    "title": "CPS Prosecutor",
+    "salary": "£7,000 - £12,000",
+    "description": "Prepare prosecutions, present cases, and give criminal and legal RP real courtroom weight.",
+    "longDescription": "CPS prosecutors turn arrests and investigations into properly structured courtroom consequences. You are not just arguing in court; you are preparing the case, organising the facts, and presenting the city with a believable prosecution standard.\n\nThis role works best for players who enjoy structure, evidence, and high-trust scenes. It adds real depth to legal roleplay and helps connect police work with the civilian justice system.",
+    "requirements": [
+      "Law degree",
+      "Bar qualification or equivalent",
+      "Case preparation experience",
+      "Professional ethics"
+    ]
+  },
+  {
+    "id": "butcher",
+    "variant": "butcher",
+    "sectorId": "service-hospitality",
+    "number": "16",
+    "backgroundImage": "assets/images/civ-jobs/job-butcher.png",
+    "accentColor": "rgba(144, 64, 50, 0.88)",
+    "title": "Butcher",
+    "salary": "£2,300 - £4,200",
+    "description": "Serve the local food trade with skilled prep, reliable hygiene, and shop-front routine.",
+    "longDescription": "Butcher work gives civilian characters a grounded retail trade with a strong local identity. It is practical, customer-facing, and built around care, hygiene, and consistency rather than spectacle.\n\nThe role is ideal for players who want a steady shop-based routine that still creates community ties. It can stay simple or grow into supplier, business, and high-street RP depending on how far the character takes it.",
+    "requirements": [
+      "Food hygiene training",
+      "Careful handling and safety",
+      "Reliability",
+      "No active warrants"
+    ]
+  },
+  {
+    "id": "window-cleaner",
+    "variant": "window-cleaner",
+    "sectorId": "service-hospitality",
+    "number": "17",
+    "backgroundImage": "assets/images/civ-jobs/job-window-cleaner.png",
+    "accentColor": "rgba(82, 118, 136, 0.84)",
+    "title": "Window Cleaner",
+    "salary": "£2,100 - £4,100",
+    "description": "Take visible service jobs around the city with a role built on safety and professionalism.",
+    "longDescription": "Window cleaning is a deceptively strong civilian role because it is easy to understand and visually distinct. It places your character on office fronts, shop exteriors, and high-rise contracts where people naturally notice the work.\n\nIt suits players who want service-based RP with a professional edge. The job feels honest, repeatable, and well matched to characters building a reputation one contract at a time.",
+    "requirements": [
+      "No fear of heights",
+      "Basic tool handling",
+      "Follows safety procedures",
+      "Professional appearance"
+    ]
+  },
+  {
+    "id": "pizza-delivery-driver",
+    "variant": "pizza-delivery-driver",
+    "sectorId": "transport-logistics",
+    "number": "6",
+    "backgroundImage": "assets/images/civ-jobs/job-pizza-delivery-driver.png",
+    "accentColor": "rgba(156, 60, 44, 0.9)",
+    "title": "Pizza Delivery Driver",
+    "salary": "£1,800 - £3,300",
+    "description": "Work fast local drops and turn short food runs into easy social encounters across the map.",
+    "longDescription": "Pizza delivery is quick, accessible, and perfect for characters who want low-barrier work without losing room for roleplay. The routes are short, the interactions are frequent, and the pace can shift from relaxed to chaotic in minutes.\n\nIt is one of the best casual civilian roles for players who still want to meet people and stay visible. Even small deliveries can produce memorable scenes when the city is active.",
+    "requirements": [
+      "Valid driving licence",
+      "Safe driving",
+      "Reliability",
+      "No active warrants"
+    ]
+  },
+  {
+    "id": "refuse-collector",
+    "variant": "refuse-collector",
+    "sectorId": "industry-trades",
+    "number": "11",
+    "backgroundImage": "assets/images/civ-jobs/job-refuse-collector.png",
+    "accentColor": "rgba(72, 104, 64, 0.86)",
+    "title": "Refuse Collector",
+    "salary": "£2,300 - £3,900",
+    "description": "Keep the streets moving with essential city service work built on routine and reliability.",
+    "longDescription": "Refuse collection is public-service labour that quietly makes the city feel functional. It is straightforward, team-oriented, and ideal for characters who want honest work with visible civic value.\n\nThe role is especially good for early-stage civilian characters because it is accessible and easy to understand. It also gives plenty of room for personality, crew dynamics, and routine-based storytelling.",
+    "requirements": [
+      "No experience needed",
+      "Physical fitness",
+      "Reliable attendance",
+      "Team player"
+    ]
+  },
+  {
+    "id": "taxi-driver",
+    "variant": "taxi-driver",
+    "sectorId": "transport-logistics",
+    "number": "07",
+    "backgroundImage": "assets/images/civ-jobs/job-taxi-driver.png",
+    "accentColor": "rgba(124, 95, 31, 0.88)",
+    "title": "Taxi Driver",
+    "salary": "£2,400 - £4,500",
+    "description": "Pick up fares, learn the city, and become one of the most recognisable civilians on the server.",
+    "longDescription": "Taxi driving remains one of the strongest civilian roles for social RP. Every fare is a new encounter, every route teaches the city better, and every repeat customer helps shape a character's reputation.\n\nIt is ideal for players who want freedom, conversation, and consistent visibility. A simple cab shift can turn into networking, favours, transport support, or the first step into a bigger business story.",
+    "requirements": [
+      "Valid driving licence",
+      "Clean driving record",
+      "Customer service",
+      "City knowledge helpful"
+    ]
+  },
+  {
+    "id": "news-reporter",
+    "variant": "news-reporter",
+    "sectorId": "legal-public",
+    "number": "21",
+    "backgroundImage": "assets/images/civ-jobs/job-news-reporter.png",
+    "accentColor": "rgba(52, 87, 124, 0.88)",
+    "title": "News Reporter",
+    "salary": "£3,200 - £5,800",
+    "description": "Cover live events, interview people, and give the city a public voice when things happen.",
+    "longDescription": "News reporting is one of the best civilian roles for characters who want to be present when the city moves. It gives a reason to attend scenes, ask questions, document events, and build a public-facing identity that cuts across every department.\n\nThe role suits players who enjoy confidence, improvisation, and visible storytelling. A good reporter can become part witness, part broadcaster, and part personality in their own right.",
+    "requirements": [
+      "Good communication skills",
+      "Camera confidence",
+      "Professional attitude",
+      "Flexible availability"
     ]
   }
 ]

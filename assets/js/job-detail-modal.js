@@ -1,4 +1,4 @@
-import { toCssImageUrl } from "./asset-url.js?v=20260523c";
+import { toCssImageUrl } from "./asset-url.js?v=20260529g";
 
 export class JobDetailModal {
   constructor() {
@@ -25,13 +25,17 @@ export class JobDetailModal {
             <div class="job-modal__hero-row">
               <strong class="job-modal__number" data-job-modal-number></strong>
               <h2 class="job-modal__title" id="job-modal-title" data-job-modal-title></h2>
+              <span class="job-modal__salary" data-job-modal-salary></span>
             </div>
             <p class="job-modal__summary" data-job-modal-summary></p>
           </div>
         </div>
         <div class="job-modal__body">
+          <div class="job-modal__details">
+            <p class="section-label" data-job-modal-details-label>Requirements</p>
+            <ul class="job-modal__tags" data-job-modal-tags></ul>
+          </div>
           <div class="job-modal__copy" data-job-modal-copy></div>
-          <ul class="job-modal__tags" data-job-modal-tags></ul>
         </div>
       </div>
     `;
@@ -75,8 +79,10 @@ export class JobDetailModal {
     const label = this.modalElement.querySelector("[data-job-modal-label]");
     const number = this.modalElement.querySelector("[data-job-modal-number]");
     const title = this.modalElement.querySelector("[data-job-modal-title]");
+    const salary = this.modalElement.querySelector("[data-job-modal-salary]");
     const summary = this.modalElement.querySelector("[data-job-modal-summary]");
     const copy = this.modalElement.querySelector("[data-job-modal-copy]");
+    const detailsLabel = this.modalElement.querySelector("[data-job-modal-details-label]");
     const tags = this.modalElement.querySelector("[data-job-modal-tags]");
     const hero = this.modalElement.querySelector("[data-job-modal-hero]");
 
@@ -92,6 +98,11 @@ export class JobDetailModal {
       title.textContent = item.title ?? "";
     }
 
+    if (salary) {
+      salary.textContent = item.salary ?? "Salary varies";
+      salary.hidden = !item.salary;
+    }
+
     if (summary) {
       summary.textContent = item.description ?? "";
     }
@@ -102,7 +113,15 @@ export class JobDetailModal {
     }
 
     if (tags) {
-      tags.innerHTML = (item.tags ?? []).map((tag) => `<li>${tag}</li>`).join("");
+      tags.innerHTML = (item.requirements ?? item.tags ?? []).map((tag) => `<li>${tag}</li>`).join("");
+    }
+
+    if (detailsLabel) {
+      detailsLabel.textContent = options.detailsLabel ?? (
+        Array.isArray(item.requirements) && item.requirements.length
+          ? "Requirements"
+          : "Role details"
+      );
     }
 
     if (hero instanceof HTMLElement) {

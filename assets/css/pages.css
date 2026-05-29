@@ -418,7 +418,7 @@
   background:
     linear-gradient(90deg, rgba(3, 9, 14, 0.95) 0%, rgba(3, 9, 14, 0.56) 44%, rgba(3, 9, 14, 0.78) 100%),
     linear-gradient(180deg, rgba(6, 18, 29, 0.08), rgba(6, 18, 29, 0.5)),
-    var(--jobs-hero-image, url("../images/heroes/civ-jobs-hero-v1.png"));
+    var(--jobs-hero-image, url("../images/civ-jobs/civ-jobs-hero-20260529.png"));
   background-position: var(--jobs-hero-position, 68% center);
   background-repeat: no-repeat;
   background-size: cover;
@@ -430,7 +430,7 @@
     radial-gradient(circle at 68% 58%, rgba(231, 196, 140, 0.14), transparent 18%),
     radial-gradient(circle at 74% 32%, rgba(197, 75, 52, 0.18), transparent 17%),
     linear-gradient(180deg, rgba(24, 7, 10, 0.18), rgba(6, 18, 29, 0.4)),
-    var(--crime-hero-image, none);
+    var(--crime-hero-image, url("../images/crim-jobs/crim-jobs-hero-20260529.png"));
   background-position: var(--crime-hero-position, center 58%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -478,6 +478,55 @@
 .job-rail {
   display: grid;
   gap: 0.9rem;
+}
+
+.jobs-overview,
+.jobs-sectors {
+  display: grid;
+  gap: 1rem;
+}
+
+.jobs-overview__item,
+.jobs-sector {
+  padding: 1.35rem;
+}
+
+.jobs-overview__item {
+  gap: 0.35rem;
+}
+
+.jobs-overview__value {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+  color: #fff1d4;
+}
+
+.jobs-overview__label {
+  color: var(--color-text-muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.jobs-sector__heading {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.jobs-sector__title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.jobs-sector__copy {
+  max-width: 42rem;
+  color: var(--color-text-muted);
+}
+
+.jobs-sector__grid {
+  display: grid;
+  gap: 1rem;
 }
 
 .job-card {
@@ -611,6 +660,132 @@
   transform: translateX(3px);
   border-color: rgba(216, 187, 121, 0.32);
   background: rgba(216, 187, 121, 0.08);
+}
+
+.job-card--civilian .job-card__body {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.job-card--civilian .job-card__copy {
+  gap: 0.75rem;
+}
+
+.job-card--civilian .job-card__eyebrow {
+  color: var(--color-gold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.job-card--civilian .job-card__headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.job-card--civilian .job-card__body h2 {
+  font-size: 1.9rem;
+}
+
+.job-card--civilian .job-card__salary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.7rem;
+  border: 1px solid rgba(216, 187, 121, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff1d4;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.job-card--civilian .job-card__footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.job-card--civilian .job-card__requirements {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.job-card--civilian .job-card__requirements-label {
+  color: var(--color-text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.job-card--civilian .job-card__tags {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.job-card--civilian .job-card__tags li {
+  font-size: 0.82rem;
+}
+
+.job-card--criminal .job-card__body {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.job-card--criminal .job-card__copy {
+  gap: 0.75rem;
+}
+
+.job-card--criminal .job-card__eyebrow {
+  color: var(--color-gold);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.job-card--criminal .job-card__headline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.job-card--criminal .job-card__body h2 {
+  font-size: 1.9rem;
+}
+
+.job-card--criminal .job-card__footer {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.job-card--criminal .job-card__meta {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.job-card--criminal .job-card__meta-label {
+  color: var(--color-text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.job-card--criminal .job-card__tags {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.job-card--criminal .job-card__tags li {
+  font-size: 0.82rem;
 }
 
 @media (max-width: 640px) {
@@ -767,6 +942,24 @@
   color: rgba(249, 238, 214, 0.84);
 }
 
+.job-modal__salary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.75rem;
+  border: 1px solid rgba(216, 187, 121, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff1d4;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.job-modal__salary[hidden] {
+  display: none;
+}
+
 .job-modal__body {
   display: grid;
   gap: 1.25rem;
@@ -779,6 +972,17 @@
   display: grid;
   gap: 1rem;
   color: var(--color-text-soft);
+}
+
+.job-modal__details {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(216, 187, 121, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.job-modal__details .section-label {
+  margin-bottom: 0.65rem;
 }
 
 .job-modal__tags {
@@ -2009,6 +2213,10 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .jobs-overview {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .department-strip__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2020,6 +2228,11 @@
   .job-card__body {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
+  }
+
+  .jobs-sector__heading {
+    grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+    align-items: end;
   }
 
   .rules-shell {
@@ -2039,6 +2252,21 @@
 }
 
 @media (min-width: 1100px) {
+  .jobs-sector__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .job-card--civilian,
+  .job-card--criminal {
+    grid-template-columns: minmax(12rem, 15rem) minmax(0, 1fr);
+  }
+
+  .job-card--civilian .job-card__body,
+  .job-card--criminal .job-card__body {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
   .department-page__details {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2067,6 +2295,10 @@
   .jobs-pillars,
   .department-page__values,
   .department-page__details {
+    grid-template-columns: 1fr;
+  }
+
+  .jobs-overview {
     grid-template-columns: 1fr;
   }
 

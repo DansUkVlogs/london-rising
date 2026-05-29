@@ -1,5 +1,5 @@
-import { AppShell } from "./app-shell.js?v=20260529d";
-import { JsonLoader } from "./json-loader.js?v=20260529d";
+import { AppShell } from "./app-shell.js?v=20260529g";
+import { JsonLoader } from "./json-loader.js?v=20260529g";
 
 const dataLoader = new JsonLoader();
 const [siteConfig, brandingConfig] = await dataLoader.loadAll([

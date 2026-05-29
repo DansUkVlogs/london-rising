@@ -1,86 +1,290 @@
 [
   {
-    "id": "corner-dealing",
-    "variant": "corner-dealing",
+    "id": "atm-robbery",
+    "variant": "atm-robbery",
+    "sectorId": "robberies-raids",
     "number": "01",
-    "backgroundImage": "assets/images/opportunities/crime-street-dealing.png",
-    "accentColor": "rgba(54, 19, 27, 0.86)",
-    "title": "Street Dealing",
-    "description": "Move product through the city, manage heat, and build a name in the local underground economy.",
-    "longDescription": "Street dealing is the entry point for characters who want to work the shadows and build a criminal name from the ground up. It is quick, risky, and heavily dependent on where you operate, who you know, and how well you manage police attention.\n\nDone properly, it becomes more than a fast-money loop. It creates territory disputes, repeat customers, rival crews, and the kind of reputation that can pull a character into deeper and more organised crime.",
+    "backgroundImage": "assets/images/crim-jobs/activity-atm-robbery.png",
+    "accentColor": "rgba(89, 34, 34, 0.9)",
+    "title": "ATM Robbery",
+    "description": "Rip an ATM fast, move it cleanly, and disappear before the response closes the route.",
+    "longDescription": "ATM robbery is a quick, loud money job that rewards speed more than comfort. The score is simple on paper, but the real pressure comes from timing the hit, securing transport, and getting the machine out of the area before the city catches up.\n\nIt works best for crews who like sharp windows and short-notice decisions. A clean run feels efficient and professional, while a sloppy one leaves a trail of panic, witnesses, and attention behind it.",
     "tags": [
-      "Quick cash",
-      "High risk"
+      "Fast hit",
+      "High heat",
+      "Vehicle needed"
     ]
   },
   {
-    "id": "boosting",
-    "variant": "boosting",
+    "id": "shop-robbery",
+    "variant": "shop-robbery",
+    "sectorId": "robberies-raids",
     "number": "02",
-    "backgroundImage": "assets/images/opportunities/crime-boosting.png",
-    "accentColor": "rgba(30, 44, 78, 0.84)",
-    "title": "Vehicle Boosting",
-    "description": "Steal requested vehicles, beat the clock, and deliver clean jobs for bigger rewards and more dangerous contracts.",
-    "longDescription": "Vehicle boosting is perfect for criminal characters who want fast decision-making, pressure, and escalation. Jobs can begin with ordinary targets and build into specialist requests that demand speed, clean execution, and a reliable handoff.\n\nIt works best when played with discipline and crew structure. The more successful your operations become, the more attention you attract from police, rivals, and the people paying for the vehicles in the first place.",
+    "backgroundImage": "assets/images/crim-jobs/activity-shop-robbery.png",
+    "accentColor": "rgba(34, 72, 66, 0.86)",
+    "title": "Shop Robbery",
+    "description": "Pressure late-night businesses, control the scene, and survive the short response window.",
+    "longDescription": "Shop robbery is one of the cleanest ways to generate direct public tension. The target is small enough to feel immediate, but the moment the pressure starts, clerks, bystanders, and police all become part of the story.\n\nThese jobs reward composure and roleplay just as much as they reward speed. A crew that can control the moment without panicking will always feel more dangerous than one that relies on noise alone.",
     "tags": [
-      "Crew work",
-      "Escalating jobs"
+      "Live response",
+      "Public pressure",
+      "Short window"
     ]
   },
   {
-    "id": "burglaries",
-    "variant": "burglaries",
+    "id": "smash-and-grab",
+    "variant": "smash-and-grab",
+    "sectorId": "robberies-raids",
     "number": "03",
-    "backgroundImage": "assets/images/opportunities/crime-burglaries.png",
-    "accentColor": "rgba(74, 48, 19, 0.88)",
-    "title": "House Burglaries",
-    "description": "Break into properties, search for valuables, and get out before residents, neighbours, or police close in.",
-    "longDescription": "House burglaries reward patience, stealth, and the ability to stay calm when a quiet job starts turning loud. The tension comes from being inside somebody else's space, searching quickly, and knowing every second spent inside raises the odds of disaster.\n\nThis role shines when you want suspense-heavy criminal scenes rather than open chaos. A single burglary can create evidence, witnesses, retaliation, and story hooks that reach well beyond the value of the stolen goods.",
+    "backgroundImage": "assets/images/crim-jobs/activity-smash-and-grab.png",
+    "accentColor": "rgba(94, 58, 22, 0.88)",
+    "title": "Smash and Grab",
+    "description": "Hit a storefront hard, grab value quickly, and turn noise into profit before the street locks down.",
+    "longDescription": "Smash and grab jobs are built around impact. They are not subtle, and that is exactly why they work so well for players who want fast movement, immediate risk, and the feeling that every second on scene is borrowed time.\n\nThe appeal is not just the payout. It is the chaos of a short violent window, the scramble to get clear, and the chance that one bold move turns into a pursuit, a witness problem, or a new rivalry.",
     "tags": [
-      "Stealth heavy",
-      "Night work"
+      "Retail target",
+      "Loud entry",
+      "Fast escape"
     ]
   },
   {
-    "id": "atm-raids",
-    "variant": "atm-raids",
+    "id": "vangelico-robbery",
+    "variant": "vangelico-robbery",
+    "sectorId": "robberies-raids",
     "number": "04",
-    "backgroundImage": "assets/images/opportunities/crime-atm.png",
-    "accentColor": "rgba(75, 21, 21, 0.9)",
-    "title": "ATM Raids",
-    "description": "Plan smash-and-grab runs, secure transport, and disappear fast before the city response catches up.",
-    "longDescription": "ATM raids are built around speed, coordination, and nerve. They are loud enough to attract attention quickly, which means every part of the plan matters: arrival, extraction, transport, and how cleanly you break contact once the city starts reacting.\n\nThese jobs are ideal for characters who like short windows, sharp execution, and the feeling that one mistake can collapse the whole run. Fast payout comes with equally fast consequences if you get sloppy.",
+    "backgroundImage": "assets/images/crim-jobs/activity-vangelico-robbery.png",
+    "accentColor": "rgba(112, 73, 37, 0.9)",
+    "title": "Vangelico Robbery",
+    "description": "Target high-end jewellery with a score that feels sharper, richer, and far more exposed than a corner-shop hit.",
+    "longDescription": "Vangelico robbery is where retail crime turns elegant and dangerous at the same time. The setting is premium, the target is valuable, and the whole job feels more deliberate than a rough smash at a low-tier business.\n\nIt is ideal for crews who want style as well as risk. When played well, it gives the underworld a luxury target that still carries the same threat of alarms, response time, and public fallout.",
     "tags": [
-      "Fast payout",
-      "Heat magnet"
+      "Luxury target",
+      "Crew job",
+      "Alarm heavy"
     ]
   },
   {
-    "id": "store-robberies",
-    "variant": "store-robberies",
+    "id": "heist-contracts",
+    "variant": "heist-contracts",
+    "sectorId": "heists-contracts",
     "number": "05",
-    "backgroundImage": "assets/images/opportunities/crime-store.png",
-    "accentColor": "rgba(25, 63, 58, 0.82)",
-    "title": "Store Robberies",
-    "description": "Hit convenience stores and late-night businesses, manage hostages or pressure, and survive the response window.",
-    "longDescription": "Store robberies bring criminal roleplay into direct contact with the public and emergency services. They are some of the best opportunities for live negotiation, improvisation, and tension between keeping control and knowing backup is already on the way.\n\nWhether you play them as desperate short-term scores or part of a larger criminal pattern, they naturally create scenes with stakes. Clerks, bystanders, police, and crew members all become part of the story the moment the pressure starts building.",
+    "backgroundImage": "assets/images/crim-jobs/activity-heist-contracts.png",
+    "accentColor": "rgba(35, 45, 83, 0.86)",
+    "title": "Heist Contracts",
+    "description": "Take contract jobs that connect smaller crews to bigger scores and organised-crime progression.",
+    "longDescription": "Heist contracts are the bridge between small-time crime and serious operations. They give characters a reason to meet fixers, complete prep, prove reliability, and earn access to jobs that feel larger than anything you can do alone.\n\nThis is a strong lane for crews that want progression without rushing straight to the top. It creates structure, gatekeeping, and the sense that organised crime has levels instead of one flat menu of cash grabs.",
     "tags": [
-      "Roleplay heavy",
-      "Live response"
+      "Crew planning",
+      "Progression route",
+      "Bigger access"
     ]
   },
   {
-    "id": "major-heists",
-    "variant": "major-heists",
+    "id": "pacific-bank-heist",
+    "variant": "pacific-bank-heist",
+    "sectorId": "heists-contracts",
     "number": "06",
-    "backgroundImage": "assets/images/opportunities/crime-heists.png",
-    "accentColor": "rgba(82, 36, 18, 0.88)",
-    "title": "Major Heists",
-    "description": "Build toward serious organised crime with layered plans, specialist roles, and city-wide consequences when things go wrong.",
-    "longDescription": "Major heists are endgame criminal stories that demand planning, trust, and the right people in the right roles. They should feel like operations, not quick cash, with the possibility of surveillance, specialist equipment, overlapping crews, and serious law enforcement response.\n\nWhen they succeed, they define reputations. When they fail, they leave evidence trails, arrests, rival tension, and long-term consequences that can shape the criminal underworld for weeks.",
+    "backgroundImage": "assets/images/crim-jobs/activity-pacific-bank-heist.png",
+    "accentColor": "rgba(92, 46, 33, 0.9)",
+    "title": "Pacific Bank Heist",
+    "description": "Pull one of the biggest public scores on the map with planning, coordination, and serious consequences.",
+    "longDescription": "Pacific Bank is the kind of hit that should feel like an event, not a routine job. The target is prestigious, the pressure is immediate, and the aftermath can affect police, crews, and the wider city long after the score ends.\n\nIt suits players who enjoy high-commitment scenes with roles, fallback plans, and the constant chance of collapse. Success should feel earned. Failure should leave a mark.",
     "tags": [
-      "Endgame content",
-      "Big consequences"
+      "Endgame score",
+      "Heavy response",
+      "Specialist roles"
+    ]
+  },
+  {
+    "id": "train-heist",
+    "variant": "train-heist",
+    "sectorId": "heists-contracts",
+    "number": "07",
+    "backgroundImage": "assets/images/crim-jobs/activity-train-heist.png",
+    "accentColor": "rgba(63, 72, 95, 0.88)",
+    "title": "Train Heist",
+    "description": "Board a moving score, manage timing, and turn raw logistics into a cinematic getaway.",
+    "longDescription": "Train heists feel different from static robberies because the target never stops moving. That one change creates a completely different type of tension around timing, positioning, escape, and how much pressure a crew can handle once the job is in motion.\n\nThis activity is perfect for players who want action-heavy crime without losing the need for prep. It rewards timing, nerve, and the willingness to commit when the moment arrives.",
+    "tags": [
+      "Mobile target",
+      "Timing critical",
+      "Outdoor action"
+    ]
+  },
+  {
+    "id": "yacht-heist",
+    "variant": "yacht-heist",
+    "sectorId": "heists-contracts",
+    "number": "08",
+    "backgroundImage": "assets/images/crim-jobs/activity-yacht-heist.png",
+    "accentColor": "rgba(41, 86, 112, 0.86)",
+    "title": "Yacht Heist",
+    "description": "Infiltrate luxury at the waterfront and turn a quiet marina into a premium covert score.",
+    "longDescription": "Yacht heists bring a different texture to criminal RP. Instead of high-street panic or city-centre noise, the atmosphere is cleaner, quieter, and far more dependent on stealth, positioning, and a polished crew dynamic.\n\nThat contrast is what makes the job special. It gives players a luxury target that still feels dangerous, but in a way that leans on poise and discipline instead of raw chaos.",
+    "tags": [
+      "Stealth entry",
+      "Premium loot",
+      "Waterfront escape"
+    ]
+  },
+  {
+    "id": "chop-shop",
+    "variant": "chop-shop",
+    "sectorId": "vehicle-fraud",
+    "number": "09",
+    "backgroundImage": "assets/images/crim-jobs/activity-chop-shop.png",
+    "accentColor": "rgba(99, 70, 31, 0.88)",
+    "title": "Chop Shop",
+    "description": "Strip hot vehicles, break them down, and keep the illegal parts economy moving behind closed doors.",
+    "longDescription": "Chop shop work is one of the best ways to make vehicle crime feel like a proper underworld trade. The payoff is not just in the car itself, but in the hidden garage work, the parts pipeline, and the idea that stolen vehicles do not simply vanish on their own.\n\nThis route suits characters who like industrial, behind-the-scenes criminal RP. It is less public than a robbery, but no less important when crews need money, supplies, and somewhere dirty work can happen out of sight.",
+    "tags": [
+      "Vehicle stripping",
+      "Hidden garage",
+      "Parts economy"
+    ]
+  },
+  {
+    "id": "vin-scratching",
+    "variant": "vin-scratching",
+    "sectorId": "vehicle-fraud",
+    "number": "10",
+    "backgroundImage": "assets/images/crim-jobs/activity-vin-scratching.png",
+    "accentColor": "rgba(58, 83, 110, 0.86)",
+    "title": "VIN Scratching",
+    "description": "Alter vehicle identity, hide hot cars, and support the deeper fraud side of the vehicle scene.",
+    "longDescription": "VIN scratching turns vehicle crime into something more technical than simple theft. The job is about cleaning identities, reducing traceability, and making dangerous assets usable for longer than a single hot run.\n\nIt works especially well for players who enjoy quiet competence and illegal tradecraft. The role creates value for everyone else in the ecosystem without needing a public gunfight every time money changes hands.",
+    "tags": [
+      "Identity fraud",
+      "Technical work",
+      "Low profile"
+    ]
+  },
+  {
+    "id": "fake-plates",
+    "variant": "fake-plates",
+    "sectorId": "vehicle-fraud",
+    "number": "11",
+    "backgroundImage": "assets/images/crim-jobs/activity-fake-plates.png",
+    "accentColor": "rgba(88, 88, 104, 0.84)",
+    "title": "Fake Plates",
+    "description": "Build clean-looking covers for dirty vehicles and make future jobs harder to trace.",
+    "longDescription": "Fake plates are prep work, but good prep is what keeps bigger jobs alive. A vehicle that looks wrong or reads hot at the wrong moment can kill a plan before the crew even reaches the target.\n\nThat makes this activity more valuable than it looks at first glance. It feeds robberies, transport, and escape routes while giving technically minded criminals a lane that feels useful every single day.",
+    "tags": [
+      "Disguise vehicles",
+      "Prep work",
+      "Repeat use"
+    ]
+  },
+  {
+    "id": "slash-tires",
+    "variant": "slash-tires",
+    "sectorId": "vehicle-fraud",
+    "number": "12",
+    "backgroundImage": "assets/images/crim-jobs/activity-slash-tires.png",
+    "accentColor": "rgba(87, 37, 37, 0.88)",
+    "title": "Slash Tires",
+    "description": "Sabotage parked vehicles to intimidate rivals, cause problems, or spark street-level retaliation.",
+    "longDescription": "Slash tires is a smaller act of crime, but it can create outsized roleplay when used well. It is quick, mean, and personal, which makes it ideal for messages, escalation, and low-cost disruption when a crew wants to apply pressure.\n\nBecause the act is simple, the story around it matters most. Used properly, it becomes a warning shot that can pull characters into feuds, revenge, and broader neighbourhood tension.",
+    "tags": [
+      "Sabotage",
+      "Quick disorder",
+      "Street pressure"
+    ]
+  },
+  {
+    "id": "drug-system",
+    "variant": "drug-system",
+    "sectorId": "street-hustles",
+    "number": "13",
+    "backgroundImage": "assets/images/crim-jobs/activity-drug-system.png",
+    "accentColor": "rgba(45, 78, 58, 0.86)",
+    "title": "Drug System",
+    "description": "Work the local product scene, manage repeat customers, and build criminal presence one handoff at a time.",
+    "longDescription": "Drug dealing gives the underworld its day-to-day rhythm. It is one of the clearest ways for characters to build street presence, create repeat business, and turn small transactions into larger territory problems over time.\n\nThe strength of this route is consistency. It keeps people active between major jobs and helps the criminal world feel lived in, competitive, and always one mistake away from unwanted heat.",
+    "tags": [
+      "Street income",
+      "Territory pressure",
+      "Repeat customers"
+    ]
+  },
+  {
+    "id": "pickpocket",
+    "variant": "pickpocket",
+    "sectorId": "street-hustles",
+    "number": "14",
+    "backgroundImage": "assets/images/crim-jobs/activity-pickpocket.png",
+    "accentColor": "rgba(52, 69, 90, 0.84)",
+    "title": "Pickpocket",
+    "description": "Lift cash and valuables from crowds with a low-profile route built on timing and nerve.",
+    "longDescription": "Pickpocketing is one of the purest opportunist crimes on the page. It depends on movement, awareness, and the confidence to work close to ordinary people without turning the whole scene loud.\n\nThat makes it perfect for characters who prefer subtle pressure over brute force. It is quick to understand, easy to weave into city life, and strong for players who enjoy stealthy personal risk instead of crew-scale violence.",
+    "tags": [
+      "Crowded areas",
+      "Low profile",
+      "Opportunity crime"
+    ]
+  },
+  {
+    "id": "graffiti",
+    "variant": "graffiti",
+    "sectorId": "street-hustles",
+    "number": "15",
+    "backgroundImage": "assets/images/crim-jobs/activity-graffiti.png",
+    "accentColor": "rgba(39, 87, 91, 0.86)",
+    "title": "Graffiti",
+    "description": "Mark territory, send messages, and turn public walls into visible criminal presence.",
+    "longDescription": "Graffiti is not just vandalism when it is tied to reputation and territory. It gives crews a way to announce themselves, taunt rivals, and turn ordinary public space into part of the underworld's conversation.\n\nThis activity works especially well for players who like style, symbolism, and smaller criminal acts with longer social reach. The mark itself is quick. The message behind it can last much longer.",
+    "tags": [
+      "Territory flex",
+      "Public visibility",
+      "Risky spots"
+    ]
+  },
+  {
+    "id": "grave-digging",
+    "variant": "grave-digging",
+    "sectorId": "street-hustles",
+    "number": "16",
+    "backgroundImage": "assets/images/crim-jobs/activity-grave-digging.png",
+    "accentColor": "rgba(67, 82, 61, 0.86)",
+    "title": "Grave Digging",
+    "description": "Take a stranger, darker route into underworld money with secluded jobs and uneasy atmosphere.",
+    "longDescription": "Grave digging stands out because it feels different from the rest of the criminal menu. The locations are quieter, the mood is worse, and the work carries an unsettling edge that turns even a simple job into something memorable.\n\nIt suits players who want criminal RP that feels eerie rather than flashy. That difference gives the underworld more texture and makes the activity feel like a proper odd-job lane instead of recycled robbery content.",
+    "tags": [
+      "Night work",
+      "Remote areas",
+      "Uneasy tone"
+    ]
+  },
+  {
+    "id": "illegal-tools-crafting",
+    "variant": "illegal-tools-crafting",
+    "sectorId": "black-market-utility",
+    "number": "17",
+    "backgroundImage": "assets/images/crim-jobs/activity-illegal-tools-crafting.png",
+    "accentColor": "rgba(79, 66, 40, 0.86)",
+    "title": "Illegal Tools Crafting",
+    "description": "Produce the dirty kit other criminals need and become useful long before a robbery starts.",
+    "longDescription": "Illegal tools crafting turns preparation into a criminal identity of its own. Not everyone needs to be the person kicking the door or grabbing the cash when there is real value in being the one who can supply the gear.\n\nThat makes this route perfect for players who want influence through utility. It feeds bigger jobs, creates trade relationships, and gives the wider underworld a reason to know your character by name.",
+    "tags": [
+      "Black-market prep",
+      "Crafting lane",
+      "Supplies needed"
+    ]
+  },
+  {
+    "id": "fuel-siphoning",
+    "variant": "fuel-siphoning",
+    "sectorId": "black-market-utility",
+    "number": "18",
+    "backgroundImage": "assets/images/crim-jobs/activity-fuel-siphoning.png",
+    "accentColor": "rgba(56, 88, 102, 0.84)",
+    "title": "Fuel Siphoning",
+    "description": "Steal fuel quietly from the city's working vehicles in a slower utility-crime route.",
+    "longDescription": "Fuel siphoning is designed as a quieter kind of theft built around patience, positioning, and supply rather than spectacle. It gives crews another way to feed the underworld through resources instead of direct cash extraction.\n\nThis route is marked as coming soon, but it already fits the page because it rounds out the utility side of the criminal economy. When it lands, it should feel like dirty logistics with real roleplay value, not just another copy of a robbery loop.",
+    "tags": [
+      "Coming soon",
+      "Utility theft",
+      "Quiet score"
     ]
   }
 ]

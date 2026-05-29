@@ -1288,13 +1288,13 @@ The active controller currently uses everything except `stats.json`.
 
 - alternate home hero image currently unused
 
-#### `assets/images/heroes/civ-jobs-hero-v1.png`
+#### `assets/images/civ-jobs/civ-jobs-hero-20260529.png`
 
-- civilians hero image
+- current civilians hero image used by the redesigned civilian jobs page
 
-#### `assets/images/heroes/criminal-hero.png`
+#### `assets/images/crim-jobs/crim-jobs-hero-20260529.png`
 
-- criminals hero image
+- current criminals hero image used by the redesigned criminal activities page
 
 #### `assets/images/heroes/police-hero-v1.png`
 
@@ -1322,57 +1322,19 @@ The active controller currently uses everything except `stats.json`.
 
 ### `assets/images/opportunities/`
 
-#### `assets/images/opportunities/civ-taxi.png`
+- legacy folder retired after the criminal page redesign
 
-- taxi job card/modal image
+### `assets/images/civ-jobs/`
 
-#### `assets/images/opportunities/civ-taxi-test.png`
+- redesigned civilian jobs image set
+- includes `civ-jobs-hero-20260529.png` plus bespoke role backgrounds for all 21 civilian jobs
+- used by `assets/data/civ-jobs/hero.json` and `assets/data/civ-jobs/jobs.json`
 
-- alternate taxi image currently unused
+### `assets/images/crim-jobs/`
 
-#### `assets/images/opportunities/civ-bus.png`
-
-- bus job image
-
-#### `assets/images/opportunities/civ-delivery.png`
-
-- delivery job image
-
-#### `assets/images/opportunities/civ-sanitation.png`
-
-- sanitation job image
-
-#### `assets/images/opportunities/civ-logistics.png`
-
-- logistics job image
-
-#### `assets/images/opportunities/civ-legal.png`
-
-- legal job image
-
-#### `assets/images/opportunities/crime-street-dealing.png`
-
-- street dealing image
-
-#### `assets/images/opportunities/crime-boosting.png`
-
-- boosting image
-
-#### `assets/images/opportunities/crime-burglaries.png`
-
-- burglaries image
-
-#### `assets/images/opportunities/crime-atm.png`
-
-- ATM raids image
-
-#### `assets/images/opportunities/crime-store.png`
-
-- store robbery image
-
-#### `assets/images/opportunities/crime-heists.png`
-
-- major heist image
+- redesigned criminal activities image set
+- includes `crim-jobs-hero-20260529.png` plus bespoke backgrounds for all 18 criminal activities
+- used by `assets/data/crim-jobs/hero.json` and `assets/data/crim-jobs/activities.json`
 
 ### `assets/images/placeholders/`
 

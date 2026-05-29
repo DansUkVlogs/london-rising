@@ -1,0 +1,32 @@
+[
+  {
+    "id": "robberies-raids",
+    "label": "Robberies & Raids",
+    "title": "Loud scores with fast windows and faster consequences.",
+    "description": "These jobs put crews into direct contact with civilians, alarms, and police pressure. They are ideal when you want public scenes, visible tension, and short decisions that matter."
+  },
+  {
+    "id": "heists-contracts",
+    "label": "Heists & Contracts",
+    "title": "Organised crime starts with planning and ends with fallout.",
+    "description": "This lane is for bigger crews, longer prep, and specialist roles. It is where criminal RP feels most like an operation instead of a random cash grab."
+  },
+  {
+    "id": "vehicle-fraud",
+    "label": "Vehicle Crime & Fraud",
+    "title": "Steal, disguise, strip, and repurpose what moves.",
+    "description": "Vehicle-focused crime adds garages, mechanics, scouting, and prep work to the underworld. It suits characters who prefer technical jobs and quieter setup scenes before the chaos starts."
+  },
+  {
+    "id": "street-hustles",
+    "label": "Street Hustles & Disorder",
+    "title": "Low-profile money, public nuisance, and fast opportunism.",
+    "description": "These activities keep characters active between bigger scores and help neighbourhood reputation grow. They work best when players want repeatable pressure, territory presence, and everyday criminal texture."
+  },
+  {
+    "id": "black-market-utility",
+    "label": "Black Market & Utility",
+    "title": "Prepare the tools and steal the resources bigger jobs rely on.",
+    "description": "This lane feeds the wider underworld through crafting, supplies, and dirty logistics. It is ideal for characters who want to enable crime as much as commit it."
+  }
+]
