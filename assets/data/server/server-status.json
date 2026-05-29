@@ -2,7 +2,7 @@
   "status": "Online",
   "summary": "All systems operational",
   "playerCount": 128,
-  "playerCap": 250,
+  "playerCap": 32,
   "liveSource": {
     "provider": "fivem",
     "joinCode": "89ymqm",
@@ -12,16 +12,13 @@
   "timezoneLabel": "BST",
   "restartTimes": [
     "00:00",
-    "05:00",
-    "10:00",
-    "14:00",
-    "18:00",
-    "22:00"
+    "06:00",
+    "14:00"
   ],
   "restartSchedule": [
     {
       "title": "Daily restart cycle",
-      "detail": "00:00, 05:00, 10:00, 14:00, 18:00, 22:00 BST"
+      "detail": "00:00, 06:00, 14:00 BST"
     },
     {
       "title": "Weekly maintenance",

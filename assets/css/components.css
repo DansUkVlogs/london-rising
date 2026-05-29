@@ -370,6 +370,16 @@
   letter-spacing: 0.04em;
 }
 
+[data-server-status-root][data-status="offline"] .status-dot {
+  background: var(--color-accent);
+  box-shadow: none;
+  animation: none;
+}
+
+[data-server-status-root][data-status="offline"] .status-text {
+  color: var(--color-accent);
+}
+
 .status-summary {
   margin-top: 0.5rem;
   color: var(--color-text-muted);

@@ -39,31 +39,33 @@ export class FiveMStatusPoller {
     }, timeoutMs);
 
     try {
-      const response = await fetch(
-        `https://servers-frontend.fivem.net/api/servers/single/${encodeURIComponent(this.liveSourceConfig.joinCode)}`,
-        {
-          cache: "no-store",
-          headers: { Accept: "application/json" },
-          signal: this.abortController.signal,
-        },
-      );
+      const response = await fetch(this.buildRequestUrl(), {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+        signal: this.abortController.signal,
+      });
 
       if (!response.ok) {
         throw new Error(`FiveM status request failed with ${response.status}`);
       }
 
       const payload = await response.json();
-      const server = payload?.Data;
+      if (payload?.ok === false || payload?.error) {
+        throw new Error(payload?.error?.detail ?? "FiveM status unavailable");
+      }
+
+      const server = payload?.Data ?? payload;
 
       if (!server) {
         throw new Error("FiveM status response did not include server data");
       }
 
       this.onUpdate({
-        status: "Online",
+        status: server.offline === true ? "Offline" : "Online",
         summary: this.buildSummary(server),
-        playerCount: Number(server.clients ?? 0),
-        playerCap: Number(server.sv_maxclients ?? server.svMaxclients ?? 0),
+        playerCount: Number(server.clients ?? server.playersCurrent ?? 0),
+        playerCap: Number(server.sv_maxclients ?? server.svMaxclients ?? server.playersMax ?? 0),
+        metricLabel: "Current players",
       });
     } catch (_error) {
       this.onError();
@@ -77,8 +79,28 @@ export class FiveMStatusPoller {
     }
   }
 
+  buildRequestUrl() {
+    const joinCode = String(this.liveSourceConfig.joinCode ?? "").trim();
+    const proxyPath = String(this.liveSourceConfig.proxyPath ?? "").trim();
+
+    if (proxyPath) {
+      if (proxyPath.includes("{joinCode}")) {
+        return new URL(
+          proxyPath.replaceAll("{joinCode}", encodeURIComponent(joinCode)),
+          window.location.origin,
+        ).toString();
+      }
+
+      const proxyUrl = new URL(proxyPath, window.location.origin);
+      proxyUrl.searchParams.set("joinCode", joinCode);
+      return proxyUrl.toString();
+    }
+
+    return `https://frontend.cfx-services.net/api/servers/single/${encodeURIComponent(joinCode)}`;
+  }
+
   buildSummary(server) {
-    const hostname = String(server.hostname ?? "").trim();
+    const hostname = String(server.hostname ?? server.projectName ?? "").trim();
     if (hostname) {
       return hostname;
     }

@@ -1,8 +1,8 @@
-import { RestartCountdown } from "./restart-countdown.js?v=20260523c";
-import { ServerStatus } from "./server-status.js?v=20260523c";
-import { toCssImageUrl } from "./asset-url.js?v=20260523c";
-import { buildLinkAttributes } from "./link-utils.js?v=20260523c";
-import { buildStyleAttribute } from "./style-utils.js?v=20260523c";
+import { RestartCountdown } from "./restart-countdown.js?v=20260529d";
+import { ServerStatus } from "./server-status.js?v=20260529d";
+import { toCssImageUrl } from "./asset-url.js?v=20260529d";
+import { buildLinkAttributes } from "./link-utils.js?v=20260529d";
+import { buildStyleAttribute } from "./style-utils.js?v=20260529d";
 
 const SERVER_STATUS_PATH = "assets/data/server/server-status.json";
 
@@ -92,7 +92,7 @@ export class HomePageController {
               <p class="status-summary" data-server-status-summary>All systems operational</p>
 
               <div class="metric-card">
-                <span class="metric-card__label">Current players</span>
+                <span class="metric-card__label" data-player-count-label>Current players</span>
                 <div class="metric-card__value">
                   <strong data-player-count>0</strong>
                   <span>/</span>

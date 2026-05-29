@@ -2,7 +2,7 @@
 
 Project version: `v1.1.0`  
 Documentation revision: `v1.1.0`  
-Last updated: `23 May 2026`
+Last updated: `29 May 2026`
 
 ## What This Project Is
 
@@ -122,7 +122,7 @@ Most images are not placed directly in HTML. Controllers typically:
 - The app relies on `fetch()` for HTML partials and JSON, so it should be served over HTTP(S), not opened via `file://`.
 - `JsonLoader` keeps an in-memory cache for the current browser session.
 - `PageLoader` protects against stale route fetches using a request id counter.
-- Live server status depends on the public FiveM server API when `liveSource.provider` is `fivem`.
+- Live server status uses a same-origin proxy path when `liveSource.provider` is `fivem`, with the cached values in `assets/data/server/server-status.json` used as a fallback if live refresh fails.
 
 ## Current Route Map
 

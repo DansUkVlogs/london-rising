@@ -2,7 +2,7 @@
 
 Project version: `v1.1.0`  
 README revision: `v1.1.0`  
-Last updated: `23 May 2026`
+Last updated: `29 May 2026`
 
 This repository contains the London Rising RP website, built as a static single-page site for a FiveM roleplay community.
 
@@ -17,7 +17,17 @@ This repository contains the London Rising RP website, built as a static single-
 
 This site should be served over HTTP(S). Do not open `index.html` directly with `file://`, because the app loads page partials and JSON using `fetch()`.
 
-Quick options:
+Recommended for local development:
+
+```powershell
+node dev-server.mjs
+```
+
+Then open:
+
+- `http://localhost:3000`
+
+Other static server options:
 
 ```powershell
 python -m http.server 8000
@@ -32,6 +42,8 @@ npx serve .
 Then open:
 
 - `http://localhost:8000`
+
+The live status card now uses FiveM's CORS-enabled `frontend.cfx-services.net` endpoint directly from the browser, so it works on plain static servers too.
 
 ## Project Structure
 

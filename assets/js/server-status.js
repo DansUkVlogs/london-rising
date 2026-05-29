@@ -1,4 +1,4 @@
-import { FiveMStatusPoller } from "./fivem-status-poller.js?v=20260523c";
+import { FiveMStatusPoller } from "./fivem-status-poller.js?v=20260529d";
 
 export class ServerStatus {
   constructor(root, serverData) {
@@ -19,10 +19,13 @@ export class ServerStatus {
     this.renderSchedule();
     this.applyStatus(
       {
-        status: liveSource.provider === "fivem" ? "Online" : this.serverData.status,
-        summary: liveSource.provider === "fivem" ? "Checking live FiveM status..." : this.serverData.summary,
+        status: liveSource.provider === "fivem" ? "Offline" : (this.serverData.status ?? "Offline"),
+        summary: liveSource.provider === "fivem"
+          ? "Refreshing live FiveM server status..."
+          : (this.serverData.summary ?? "Status unavailable"),
         playerCount: liveSource.provider === "fivem" ? 0 : Number(this.serverData.playerCount ?? 0),
         playerCap: Number(this.serverData.playerCap ?? 0),
+        metricLabel: "Current players",
       },
       {
         playerAnimationDuration: 800,
@@ -37,17 +40,9 @@ export class ServerStatus {
           });
         },
         onError: () => {
-          this.applyStatus(
-            {
-              status: "Offline",
-              summary: "Live FiveM status unavailable right now",
-              playerCount: 0,
-              playerCap: this.lastKnownPlayerCap,
-            },
-            {
-              playerAnimationDuration: 650,
-            },
-          );
+          this.applyStatus(this.buildFallbackStatus(), {
+            playerAnimationDuration: 650,
+          });
         },
       });
 
@@ -86,6 +81,16 @@ export class ServerStatus {
       .join("");
   }
 
+  buildFallbackStatus() {
+    return {
+      status: "Offline",
+      summary: "Live FiveM status unavailable right now.",
+      playerCount: 0,
+      playerCap: Number(this.serverData.playerCap ?? this.lastKnownPlayerCap ?? 0),
+      metricLabel: "Current players",
+    };
+  }
+
   applyStatus(nextStatus, options = {}) {
     const normalizedStatus = String(nextStatus.status ?? "Offline");
     const playerCount = Number(nextStatus.playerCount ?? 0);
@@ -97,6 +102,7 @@ export class ServerStatus {
 
     this.setText("[data-server-status-text]", normalizedStatus.toUpperCase());
     this.setText("[data-server-status-summary]", nextStatus.summary ?? "Status unavailable");
+    this.setText("[data-player-count-label]", nextStatus.metricLabel ?? "Current players");
     this.setText("[data-player-cap]", String(playerCap || this.lastKnownPlayerCap || 0));
 
     const statusRoot = this.root.querySelector("[data-server-status-root]");
